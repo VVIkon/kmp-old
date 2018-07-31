@@ -1,0 +1,242 @@
+.ore-header-info {
+  float: left;
+  width: 920px;
+  height: 85px;
+  padding: 0;
+  border: 1px solid #c4cdd6;
+  background: #fff;
+  text-decoration: none;
+  @include box-sizing(border-box);
+  @include clearfix();
+
+  &__spinner {
+    width: 63px;
+    height: 63px;
+    padding:5px;
+    margin:0 auto;
+
+    img {
+      width:100%;
+    }
+  }
+
+  &__delim {
+    float: left;
+    width: 1px;
+    height: 100%;
+    padding: 5px 0;
+    margin: 0 5px;
+    @include box-sizing(border-box);
+
+    &:after {
+      content:'';
+      display:inline-block;
+      width: 1px;
+      height:100%;
+      background: #c4cdd6;
+    }
+  }
+
+  &__chat-link {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__wrapper-status {
+    float:left;
+    width: 80px;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    @include box-sizing(border-box);
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #fbfcfc 50%, #fbfcfc 50%, #edf0f2 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#fbfcfc), color-stop(50%,#fbfcfc), color-stop(100%,#edf0f2));
+    background: -webkit-linear-gradient(top, #ffffff 0%,#fbfcfc 50%,#fbfcfc 50%,#edf0f2 100%);
+    background: -o-linear-gradient(top, #ffffff 0%,#fbfcfc 50%,#fbfcfc 50%,#edf0f2 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%,#fbfcfc 50%,#fbfcfc 50%,#edf0f2 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#fbfcfc 50%,#fbfcfc 50%,#edf0f2 100%);
+    text-align: center;
+  }
+
+  &__wrapper-brief {
+    float: left;
+    width: 620px;
+    height: 100%;
+    padding-left: 10px;
+    @include box-sizing(border-box);
+    vertical-align: top;
+    overflow: hidden;
+  }
+
+  &__wrapper-cost {
+    float:left;
+    width:200px;
+    height:100%;
+    padding:15px 10px;
+    @include box-sizing(border-box);
+    text-align:right;
+  }
+
+  &__status-icon {
+    margin-top:6px;
+  }
+
+  &__orderid {
+    height:16px;
+    margin-top:6px;
+    padding:0;
+    color: #646f7c;
+    font: 16px 'Kelson sans';
+    line-height:16px;
+    cursor:pointer;
+
+    .kmpicon {
+      position:relative;
+      top:1px;
+      vertical-align:baseline;
+      font-size:14px;
+      color:#96bdd5;
+    }
+  }
+
+  &__icon-spacer {
+    display:inline-block;
+    height:14px;
+    width:10px;
+
+    &:after {
+      content:' ';
+    }
+  }
+
+  &__topbar {
+    position: relative;
+    height: 18px;
+    line-height: 15px;
+    padding: 1px 0;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #dadada;
+    @include box-sizing(border-box);
+  }
+
+  &__vip-flag {
+    display: inline-block;
+    height: 15px;
+    width: 30px;
+    padding: 1px 5px;
+    border-radius:3px;
+    @include box-sizing(border-box);
+    background-color:#ad2d04;
+    color:#fff;
+    line-height:12px;
+    text-align:center;
+    text-transform:lowercase;
+    font-variant:small-caps;
+    text-decoration:none;
+    font-family:'PTSansCaption',Tahoma, Geneva, sans-serif;
+    font-weight:bold;
+    font-size:13px;
+  }
+
+  &__creation-info {
+    font-size: 13px;
+    color: #646f7c;
+  }
+
+  &__wrapper-details {
+    position: relative;
+    padding-right: 270px;
+    @include box-sizing(border-box);
+  }
+
+  &__wrapper-client-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 270px;
+    text-align: right;
+  }
+
+  &__kmp-manager,
+  &__client-manager,
+  &__client-company {
+    padding: 1px 0;
+    height: 15px;
+    line-height: 13px;
+    vertical-align: middle;
+    text-align: right;
+    font-size: 13px;
+    font-weight: normal;
+    white-space: nowrap;
+    color: #3081b3;
+    overflow:hidden;
+    @include box-sizing(border-box);
+  }
+
+  &__kmp-manager {
+    color: #59739b;
+  }
+
+  &__client-manager,
+  &__client-company {
+    color: #2f8231;
+  }
+
+  &__no-manager {
+    color: #bebebe;
+  }
+
+  &__tourleader-name {
+    padding: 10px 0 5px 0;
+    line-height: 1;
+    font-family: 'Kelson sans';
+    font-size: 18px;
+    font-weight: normal;
+    color: #3081b3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &--empty {
+      color:#ff4949
+    }
+  }
+
+  &__tourleader-contacts {
+    padding: 2px 0;
+    white-space: nowrap;
+    overflow: hidden;
+
+    span,
+    a {
+      font-family: 'PTSansCaption',Tahoma, Geneva, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      color: #979797;
+      vertical-align:middle;
+      margin-right:5px;
+      white-space: nowrap;
+      overflow:hidden;
+    }
+
+    .kmpicon {
+      text-decoration:none;
+      font-size:18px;
+      margin-right:3px;
+    }
+  }
+
+  &__cost-local {
+    font-family:'PTSansCaption',Tahoma, Geneva, sans-serif;
+    font-size:24px;
+    color: #3798d6;
+  }
+
+  &__cost-requested {
+      font-size: 17px;
+      color: #b0b0b0;
+  }
+}

@@ -1,0 +1,12 @@
+.reports-schedule {
+  &__empty {
+    text-align: center;
+    color: #848484;
+  }
+
+  &__task-actions {
+    width: 72px;
+    padding-left: 5px !important;
+    text-align: right;
+  }
+}

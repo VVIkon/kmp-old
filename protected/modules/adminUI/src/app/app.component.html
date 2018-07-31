@@ -1,0 +1,23 @@
+<div class="kt-app__header-wrapper">
+  <header-panel class="header-panel">
+  ...loading
+  </header-panel>
+</div>
+<div class="kt-app__dashboard-wrapper">
+  <div class="kt-app__navigation-wrapper">
+    <nav class="navigation">
+      <div class="navigation__link" routerLink="/user-roles">
+        <svg [kt-icon]="'gear'"></svg>
+        <span>Права и роли</span>
+      </div>
+      <div class="navigation__link" routerLink="/users">
+        <svg [kt-icon]="'user'"></svg>
+        <span>Пользователи</span>
+      </div>
+    </nav>
+  </div>
+  <div class="dashboard">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<login-form></login-form>

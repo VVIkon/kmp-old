@@ -1,0 +1,53 @@
+.login-form-notification {
+  position: relative;
+  padding: 10px 30px;
+  margin-bottom: 5px;
+  min-height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 15px;
+  color: #333;
+  box-sizing: border-box;
+
+  .kmpicon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+
+  &--info {
+    border-color: #1774ac;
+    background-color: #e9e9fe;
+
+    .kmpicon {
+      color: #1774ac;
+    }
+  }
+
+  &--warning {
+    border-color: #96642e;
+    color: #96642e;
+    background-color: #fff0c6;
+
+    .kmpicon {
+      color: #96642e;
+    }
+  }
+
+  &--error {
+    border-color: #871606;
+    color: #871606;
+    background-color: #fde9e6;
+
+    .kmpicon {
+      color: #871606;
+    }
+  }
+}

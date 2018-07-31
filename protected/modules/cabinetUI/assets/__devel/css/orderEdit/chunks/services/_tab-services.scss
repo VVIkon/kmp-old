@@ -1,0 +1,49 @@
+.tab-services {
+
+  &__list-empty {
+    padding: 0px 15px 25px 15px;
+    font-size: 18px;
+    color: #979797;
+  }
+
+  .delim {
+    height: 1px;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    border-color: #c4cdd6;
+
+    hr {
+      height: 1px;
+      width: 99%;
+      background: #c4cdd6;
+      border: 0;
+      margin: 0 auto;
+    }
+  }
+
+  .iconed-link {
+    display: inline-block;
+  }
+
+  /* TODO move to common classes */
+  .formfield {
+    height:50px;
+    margin-bottom:12px;
+    padding:0 15px 0 0;
+
+    input,
+    select {
+      width:100%;
+    }
+
+    &>label,
+    .label {
+      &>span {
+        display:block;
+        font-size: 14px;
+        color: #8c8c8c;
+        margin-bottom:2px;
+      }
+    }
+  }
+}

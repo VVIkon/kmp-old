@@ -1,0 +1,31 @@
+.user-roles {
+  table {
+    min-width: 60%;
+  }
+  
+  &__header-id {
+    text-align: left;
+  }
+
+  &__header-name,
+  &__header-mask {
+    text-align: center;
+  }
+
+  &__id,
+  &__name,
+  &__mask {
+    text-align: left;
+  }
+
+  &__name {
+    font-weight: bold;
+    color: #273b47;
+    cursor: pointer;
+
+    &:hover {
+      color: #1c597e;
+      text-decoration: underline;
+    }
+  }
+}

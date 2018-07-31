@@ -1,0 +1,248 @@
+.hotel-info {
+  color: #575757;
+
+  &__main-wrapper {
+    position: relative;
+    padding: 0 0 15px 360px;
+    min-height: 420px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #c4cdd6;
+  }
+
+  &__photo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    padding: 0 15px 15px 0;
+    @include box-sizing(border-box);
+    @include user-select(none);
+  }
+
+  &__main-photo {
+    height: 1px;
+    padding: 0 0 65% 0;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    border: 1px solid #c4cdd6;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include box-sizing(border-box);
+  }
+
+  &__essentials-wrapper {
+    padding: 0 0 15px 15px;
+    @include box-sizing(border-box);
+  }
+
+  &__label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4b5072;
+  }
+
+  &__name {
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 32px;
+    font-size: 30px;
+    font-family: 'Kelson Sans';
+    color: #1773ac;
+  }
+
+  &__category {
+    vertical-align: top;
+    font-size: 22px;
+    color: #3798d6;
+
+    .kmpicon {
+      vertical-align: top;
+    }
+  }
+
+  &__chain {
+    margin: 0 0 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 24px;
+    font-size: 22px;
+    font-family: 'Kelson Sans';
+    color: #1773ac;
+  }
+
+  &__location {
+    font-size:16px;
+    font-weight:bold;
+  }
+
+  &__timings {
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #4b5072;
+  }
+
+  &__checkin {
+    color: #309f38
+  }
+  
+  &__checkout {
+    color: #3439b5;
+  }
+  
+  &__no-timing {
+    color: #9c9c9c;
+  }
+
+  &__address,
+  &__distance,
+  &__contacts {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  &__contacts-list {
+    table {
+      border-collapse: collapse;
+      border: 0;
+
+      td {
+        padding: 0 10px;
+        vertical-align: top;
+      }
+    }
+  }
+
+  &__block-wrapper {
+    margin:10px 0;
+    padding-bottom:15px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #c4cdd6;
+    @include box-sizing(border-box);
+    @include clearfix;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__block-label {
+    margin-bottom:10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4b5072;
+  }
+}
+
+.hotel-info-gallery {
+  height: 140px;
+  margin-bottom:15px;
+  overflow-y: scroll;
+  // white-space:nowrap;
+  @include box-sizing(border-box);
+
+  &__item {
+    display: inline-block;
+    margin: 3px;
+    width: 56px;
+    height: 56px;
+    border-radius: 7px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include box-sizing(border-box);
+    opacity:0.7;
+    cursor: pointer;
+
+    &.active {
+      border-width: 2px;
+      border-style: solid;
+      border-color: #1773ac;
+      box-shadow: 3px 3px 5px 0px rgba(9, 47, 110, 0.3);
+      opacity:1;
+    }
+  }
+
+  &__no-items {
+    height:120px;
+    line-height:120px;
+    vertical-align: middle;
+    text-align: center;
+    font-size:18px;
+    color: #9c9c9c;
+  }
+}
+
+.hotel-info-services {
+  margin-left:-15px;
+
+  &__label {
+    font-size: 16px;
+    color: #1773ac;
+
+    .kmpicon {
+      margin-right:5px;
+      font-size: 24px;
+    }
+  }
+
+  &__list {
+    padding: 0 0 0 10px;
+    list-style: none;
+    line-height:18px;
+    font-size: 15px;
+
+    li {
+      position:relative;
+      padding-left:15px;
+
+      @include kmpicon-radio-off;
+
+      &:before {
+        position:absolute;
+        left: 0;
+        top: 0;
+        line-height: 18px;
+        font-size: 10px;
+        font-family: "kmpicons";
+        color: #1773ac;
+      }
+
+    }
+  }
+}
+
+.hotel-info-description {
+  padding:10px;
+  margin-bottom:10px;
+  border-radius: 5px;
+  border: 1px solid #c4cdd6;
+  //box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5fe;
+  @include box-sizing(border-box);
+
+  &__wrapper {
+    padding-right:150px;
+  }
+
+  &__label {
+    margin:0 0 10px 0;
+    font-size: 16px;
+    color: #1773ac;
+  }
+
+  &__empty {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #9c9c9c;
+  }
+}

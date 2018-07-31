@@ -1,0 +1,99 @@
+.service-form-shortinfo {
+  position:relative;
+  width:100%;
+  height:100%;
+  margin-bottom:5px;
+  padding-bottom:5px;
+  border-width:0 0 1px 0;
+  border-style:solid;
+  border-color:#d9d9d9;
+  @include box-sizing(border-box);
+  @include clearfix();
+
+  &__about,
+  &__amend,
+  &__price,
+  &__status-notification,
+  &__penalty {
+    min-height:1px;
+    height:100%;
+    line-height:23px;
+    @include box-sizing(border-box);
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+  }
+
+  &__about,
+  &__amend,
+  &__price {
+    float:left;
+    width:33.3%;
+  }
+  
+  &__about {
+    text-align:left;
+    font-size:16px;
+    font-weight:bold;
+    color:#818181;
+  }
+
+  &__amend {
+    text-align:center;
+    font-size:16px;
+    font-weight:normal;
+    color:#951705;
+  }
+
+  &__cancel-notification {
+    float: left;
+    width: 20%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d8332a;
+  }
+
+  &__penalty {
+    float: left;
+    width: 80%;
+  }
+
+  &__price {
+    text-align:right;
+    font-size:18px;
+    font-weight:bold;
+    color:#3798d6;
+
+    .kmpicon {
+      font-size: 20px;
+    }
+
+    &--priority-offer {
+      color: #50af53;
+    }
+  }
+
+  &__penalty {
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #d8332a;
+  }
+
+  @at-root 
+    .service-form.is-cancelled &__price {
+      color: #979797;
+  }
+
+  &__price-requested,
+  &__penalty-requested {
+    color:#818181;
+  }
+
+  &__tax {
+    .kmpicon {
+      font-size: 19px;
+    }
+  }
+}

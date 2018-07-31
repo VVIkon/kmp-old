@@ -1,0 +1,95 @@
+.modal-book-change {
+  font-size:15px;
+  color:#575757;
+
+  &__header {
+    padding: 10px 0;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #305d79;
+
+    .kmpicon {
+      vertical-align: top;
+      font-size: 24px;
+    }
+  }
+
+  &__panel {
+    margin-top:10px;
+    padding:10px 10px 15px 10px;
+    border-radius:7px;
+    border: 1px solid #c4cdd6;
+    background-color: #f7f7fe;
+    @include box-sizing(border-box);
+    color: #464646;
+  }
+
+  &__label {
+    padding: 0 0 5px 0;
+    margin-bottom: 12px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #c4cdd6;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    color: #1773ac;
+    @include clearfix;
+  }
+
+  &__question {
+    margin-top:20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1773ac;
+  }
+}
+
+.modal-book-change-dates {
+  @include clearfix;
+
+  &__date-in,
+  &__date-out {
+    padding-right:15px;
+    float:left;
+    width:50%;
+    line-height:28px;
+    text-align: left;
+    @include box-sizing(border-box);
+
+    &>span {
+      vertical-align: baseline;
+      font-size:16px;
+      font-weight: bold;
+    }
+  }
+
+  &__date-in > span {
+    color: $color-date-from;
+  }
+
+  &__date-out > span {
+    color: $color-date-to;
+  }
+
+  &__control {
+    position:relative;
+    margin-left:10px;
+    display:inline-block;
+    vertical-align: baseline;
+    width: 140px;
+  }
+}
+
+.modal-book-change-tourists {
+  margin-top:15px;
+
+  &__tourist {
+    margin-bottom:3px;
+    color: #1774ac;
+    font-size: 18px;
+  }
+}

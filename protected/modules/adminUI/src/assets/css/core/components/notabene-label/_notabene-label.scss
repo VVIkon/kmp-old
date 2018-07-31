@@ -1,0 +1,37 @@
+.notabene-label {
+  position: relative;
+  margin: 10px 0;
+  padding: 7px 14px;
+  min-height: 34px;
+  border-radius: 5px;
+  background-color: #f5f5fe;
+  box-shadow: 0px 0px 2px #1773ac;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  box-sizing: border-box;
+
+  &--warning {
+    //@extend .kmpicon-warning;
+    background-color: #fff7c9;
+    box-shadow: 0px 0px 2px #96642e;
+    color:#3c2409;
+    box-sizing: border-box;
+  }
+  
+  &--success {
+    //@extend .kmpicon-warning;
+    background-color: #D7FFC9;
+    box-shadow: 0px 0px 2px #34962E;
+    color:#0C3C08;
+    box-sizing: border-box;
+  }
+  
+  &--error {
+    //@extend .kmpicon-warning;
+    background-color: #FFD4C9;
+    box-shadow: 0px 0px 2px #96362E;
+    color:#3C0808;
+    box-sizing: border-box;
+  }
+}

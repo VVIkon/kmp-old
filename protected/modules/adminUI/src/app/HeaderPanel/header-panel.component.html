@@ -1,0 +1,12 @@
+<div class="header-panel__block header-panel__logo" routerLink="/">></div>
+<i class="header-panel__delim"></i>
+<div class="header-panel__block header-panel__title">
+  Панель администрирования
+</div>
+<i class="header-panel__delim"></i>
+<div class="header-panel__block header-panel__main">
+  <div *ngIf="user" class="header-panel__userpic header-panel__userpic--guyfox"></div>
+  <span class="header-panel__username">
+    {{user?.lastName}} {{user?.firstName | substr:0:1}} {{user?.middleName | substr:0:1}}
+  </span>
+</div>

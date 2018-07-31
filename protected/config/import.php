@@ -1,0 +1,60 @@
+<?php
+
+return [
+    'application.helpers.*',
+
+//    'application.menu.*',
+//    'application.forms.*',
+    'application.models.*',
+//    'application.widgets.*',
+    'application.components.*',
+
+    'application.modules.searcherService.components.*',
+
+    'application.modules.supplierService.modules.Dictionaries.components.*',
+    'application.modules.supplierService.modules.Dictionaries.models.*',
+
+    'application.vendors.kmp.framework.components.*',
+    'application.vendors.kmp.framework.exceptions.*',
+    'application.vendors.kmp.framework.helpers.*',
+    'application.vendors.kmp.framework.modules.*',
+
+    'application.vendors.kmp.framework.models.*',
+    'application.vendors.kmp.framework.models.Entity.*',
+    'application.vendors.kmp.framework.models.Entity.Avia.*',
+    'application.vendors.kmp.framework.models.Entity.Hotel.*',
+    'application.vendors.kmp.framework.models.Entity.TravelPolicy.*',
+    'application.vendors.kmp.framework.models.Book.*',
+    'application.vendors.kmp.framework.models.MinimalPrice.*',
+    'application.vendors.kmp.framework.models.Currency.*',
+    'application.vendors.kmp.framework.models.Offer.Avia.*',
+    'application.vendors.kmp.framework.models.Offer.Hotel.*',
+    'application.vendors.kmp.framework.models.Offer.*',
+    'application.vendors.kmp.framework.models.Repository.*',
+    'application.vendors.kmp.framework.models.RefSubService.*',
+    'application.vendors.kmp.framework.models.businessEntities.*',
+    'application.vendors.kmp.framework.models.businessEntities.flightEntities.*',
+
+    'application.vendors.kmp.framework.models.TaxAndFees.*',
+    'application.vendors.kmp.framework.models.TravelPolicy.*',
+    'application.vendors.kmp.framework.models.TravelPolicy.Rule.*',
+    'application.vendors.kmp.framework.models.TravelPolicy.Rule.Avia.*',
+    'application.vendors.kmp.framework.models.TravelPolicy.Rule.Hotel.*',
+    'application.vendors.kmp.framework.models.TravelPolicy.Rule.Common.*',
+    'application.vendors.kmp.framework.models.TravelPolicy.Rule.OfferValue.*',
+    'application.vendors.kmp.framework.models.TravelPolicy.Rule.AddField.*',
+    'application.vendors.kmp.framework.models.TravelPolicy.Action.*',
+
+    'application.vendors.kmp.framework.core.EventManager.*',
+    'application.vendors.kmp.framework.core.Logger.*',
+    'application.vendors.kmp.framework.core.Delegate.*',
+    'application.vendors.kmp.framework.core.Traits.*',
+    'application.vendors.kmp.framework.core.AsyncWorker.*',
+    'application.vendors.kmp.framework.core.Report.*',
+    'application.vendors.kmp.framework.core.Notification.*',
+    'application.vendors.kmp.framework.core.FSM.Exception.*',
+    'application.vendors.kmp.framework.core.FSM.State.*',
+    'application.vendors.kmp.framework.core.FSM.StateMachine.*',
+    'application.vendors.kmp.framework.core.FSM.Transition.*',
+    'application.vendors.kmp.framework.core.Condition.*',
+];

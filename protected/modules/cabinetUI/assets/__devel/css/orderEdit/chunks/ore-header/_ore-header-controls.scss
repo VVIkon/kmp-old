@@ -1,0 +1,27 @@
+.ore-header-controls {
+  float: left;
+  width: 280px;
+  height: 85px;
+  padding: 12px 0;
+  text-align: right;
+  @include box-sizing(border-box);
+
+  &__item {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 6px;
+    width: 62px;
+    height: 58px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+    box-shadow: 0 -3px 0 rgba(0,0,0,0.1) inset;
+    @include box-sizing(border-box);
+
+    .kmpicon {
+      font-size: 36px;
+    }
+  }
+}

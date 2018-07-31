@@ -1,0 +1,31 @@
+.orl-list-item-services {
+  line-height: 10px;
+  overflow: hidden;
+
+  &__service {
+    position: relative;
+    margin: 1px 7px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #3081b3;
+  }
+
+  &__confirmation-mark {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    background-color: #fff;
+    color: #4f8542;
+  }
+}

@@ -1,0 +1,20 @@
+<h1 class="dashboard__header">Роли пользователей</h1>
+<div class="user-roles">
+  <div *ngIf="!userRoles" class="u-1/2"><div class="spinner"></div></div>
+  <table *ngIf="userRoles" class="bsc-table user-roles__list">
+    <thead>
+      <tr>
+        <th class="user-roles__header-id">#</th>
+        <th class="user-roles__header-name">Название роли</th>
+        <th class="user-roles__header-mask">Маска доступа</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let userRole of userRoles">
+        <td class="user-roles__id">{{userRole.id}}</td>
+        <td (click)="onSelect(userRole)" class="user-roles__name">{{userRole.name}}</td>
+        <td class="user-roles__mask">{{userRole.mask}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

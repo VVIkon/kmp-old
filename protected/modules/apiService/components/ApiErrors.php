@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * Created by PhpStorm.
+ * User: v.ikonnikov
+ * Date: 19.12.2016
+ * Time: 17:42
+ */
+class ApiErrors
+{
+    const ERROR_NONE = 0;
+    const INCORRECT_JSON_FORMAT = 1;
+    const ERROR_PARAM_LANG = 2;
+    const ERROR_PARAM_CURRENCY = 3;
+    const ERROR_PARAM_USERTOKEN = 4;
+    const ERROR_PARAM_ORDERID = 5;
+    const ERROR_PARAM_DETAILSTYPE = 6;
+    const ERROR_PARAM_LIMIT = 7;
+    const ERROR_PARAM_SERVICEID = 8;
+    const ERROR_PARAM_LOCATION = 9;
+    const ERROR_PARAM_REQUEST_DETAIL = 10;
+    const ERROR_PARAM_HOTELLID = 11;
+    const ERROR_PARAM_SEARCHTOKEN = 12;
+    const ERROR_PARAM_CYRRENCY = 13;
+    const ERROR_PARAM_STARTOFFER = 14;
+    const ERROR_PARAM_OFFERLIMIT = 15;
+    const ERROR_PARAM_STARTDATE = 16;
+    const ERROR_PARAM_FINISH_LESS_START = 17;
+    const ERROR_PARAM_FINISH_OFFER_ID = 18;
+    const ERROR_PARAM_NOT_OPERATION = 19;
+
+    const ERROR_PARAM_SERVICE_TYPE = 20;
+    const ERROR_NOT_VALID_SERVICE_TYPE = 21;
+    const ERROR_NOT_VALID_OWM_OPERATION = 22;
+    const ERROR_PARAM_AGREEMENTSET = 23;
+    const ERROR_PARAM_FILENAME = 24;
+    const ERROR_PARAM_NOT_TEMPFILE = 25;
+    const ERROR_LOAD_TEMPFILE = 26;
+    const ERROR_LOAD_TEMPFILE_TO_KT = 27;
+    const ERROR_PARAM_CITY = 28;
+    const ERROR_PARAM_ROOMS_ADULTS = 29;
+
+    const ERROR_PARAM_ROOMS_CHILDRENAGES = 30;
+    const ERROR_500 = 31;
+
+
+
+}

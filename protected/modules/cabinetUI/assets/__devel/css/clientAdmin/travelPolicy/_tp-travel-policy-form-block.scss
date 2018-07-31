@@ -1,0 +1,65 @@
+.tp-travel-policy-form-block {
+  position: relative;
+  padding-top: 18px;
+
+  &__actions {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px;
+    @include clearfix;
+    z-index: 2;
+  }
+
+  &__action {
+    display: block;
+    float: right;
+    margin-left: 5px;
+
+    .btn {
+      padding: 0 3px;
+    }
+
+    .kmpicon {
+      margin: 0;
+      font-size: 16px;
+    }
+  }
+
+  &__remove-confirm {
+    display: none;
+    position: absolute;
+    right: 3px;
+    top: 100%;
+    margin-top: 3px;
+    padding: 5px 5px;
+    border: 1px solid #a52020;
+    border-radius: 3px;
+    white-space: nowrap;
+    color: #a52121;
+    background-color: #ffcdc3;
+    
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 100%;
+    }
+
+    &:before {
+      right: 5px;
+      border: 8px solid transparent;
+      border-bottom: 8px solid #a52020;
+      z-index: 2;
+    }
+
+    &:after {
+      right: 6px;
+      border: 7px solid transparent;
+      border-bottom: 7px solid #ffcdc3;
+      z-index: 3;
+    }
+  }
+}

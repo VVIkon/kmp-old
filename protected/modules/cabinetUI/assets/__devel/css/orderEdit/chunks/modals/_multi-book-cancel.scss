@@ -1,0 +1,53 @@
+.modal-multi-book-cancel {
+  font-size:15px;
+  color:#575757;
+
+  &__info {
+    margin-top:10px;
+    padding:10px;
+    border-radius:7px;
+    border: 1px solid #c4cdd6;
+    background-color: #f7f7fe;
+    @include box-sizing(border-box);
+    color: #464646;
+  }
+
+  &__service-list {
+    margin-top:15px;
+    width:100%;
+    border-collapse: collapse;
+    border: 1px solid #e0e0eb;
+
+    th {
+      padding:5px;
+      color: #1773ac;
+      background-color: #e5e5ee;
+    }
+
+    td {
+      border-width:0 1px;
+      border-style:solid;
+      border-color:#e0e0eb;
+      padding:5px;
+      color: #575757;
+      background-color: #f1f1fa;
+    }
+  }
+
+  &__label {
+    display:block;
+    font-weight:bold;
+    color: #305d79;
+  }
+
+  &__label-text {
+    font-size:15px;
+  }
+
+  &__question {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1773ac;
+  }
+}

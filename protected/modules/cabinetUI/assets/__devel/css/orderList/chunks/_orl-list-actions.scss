@@ -1,0 +1,13 @@
+.orl-list-actions {
+  padding: 20px 0;
+  text-align: center;
+
+  &__show-more {
+    color: #747474;
+
+    &:disabled {
+      color: #bbb;
+      background-color: #e5e5e5;
+    }
+  }
+}

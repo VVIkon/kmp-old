@@ -1,0 +1,31 @@
+.navigation {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+
+  &__link {
+    display: block;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    color: #273b47;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      color: #777;
+    }
+
+    .kt-icon {
+      height: 20px;
+      width: 20px;
+    }
+
+    & > * {
+      vertical-align: middle;
+    }
+  }
+}

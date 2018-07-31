@@ -1,0 +1,11 @@
+/* use mixins */
+@import "../../../../../../../app/__devel/css/core/bootstrap/mixins";
+@import "../../../../../../../app/__devel/css/mixins/kmpicons-mixin";
+
+@import "common/submodule";
+@import "common/partition-header";
+@import "common/iconed-link-sm";
+
+@import "reports/reports";
+@import "reports/reports-form";
+@import "reports/reports-schedule";

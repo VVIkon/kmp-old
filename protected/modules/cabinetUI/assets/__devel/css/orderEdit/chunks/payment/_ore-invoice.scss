@@ -1,0 +1,169 @@
+.ore-invoice {
+  padding:0;
+  @include box-shadow(-2px 0 5px rgba(0, 0, 0, 0.1));
+  border-width:1px 0 1px 1px;
+  border-style:solid;
+  border-color:#c4cdd6;
+  border-radius: 5px 0 0 5px;
+  margin-bottom:30px;
+
+  &__header {
+    position:relative;
+    padding:19px 142px 19px 332px;
+    height:58px;
+    @include box-sizing(border-box);
+    background-color:#fff;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+  }
+
+  .toggler {
+    position:absolute;
+    top:100%;
+    margin-top:1px;
+    left:0;
+    width:100%;
+    height:11px;
+    background:url('/app/img/arrowspan2.png') center top no-repeat;
+  }
+
+  &__delim {
+    width:1px;
+    border-width:0 1px 0 0;
+    border-style:solid;
+    border-color:#c4cdd6;
+    margin-left:12px;
+  }
+
+  &__status,
+  &__number,
+  &__date,
+  &__sum {
+    position:absolute;
+    top:0;
+    padding:19px 0 19px 12px;
+    font-family:'PTSansCaption',Tahoma, Geneva, sans-serif;
+    font-size:20px;
+    line-height:20px;
+    vertical-align:middle;
+    text-align:left;
+  }
+
+  &__status {
+    left:0;
+    width:60px;
+    padding-left:8px;
+    text-align:center;
+  }
+
+  &__number {
+    left:60px;
+    width:140px;
+    padding-left:6px;
+    text-align:left;
+    color: #1773ac;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+  }
+
+  &__date {
+    left:200px;
+    width:132px;
+    text-align:left;
+    color: #1773ac;
+  }
+
+  &__name {
+    display:inline-block;
+    width:100%;
+    font-family:'PTSansCaption',Tahoma, Geneva, sans-serif;
+    font-size:18px;
+    color:#393939;
+    line-height:20px;
+    vertical-align:middle;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+  }
+
+  &__sum {
+    position:absolute;
+    right:0;
+    width:150px;
+    color: #3798d6;
+  }
+
+  &__description {
+    display:none;
+    border-radius: 0 0 0 5px;
+    overflow:hidden;
+  }
+
+  &.active &__header {
+      background-color:#eceff0;
+      border-radius: 5px 0 0 0;
+      border-width:0 0 1px 0;
+      border-style:solid;
+      border-color:#c4cdd6;
+  }
+
+  &.active .toggler {
+        background-image:url('/app/img/arrowspan.png');
+        top:auto;
+        bottom:0;
+  }
+
+  &__empty {
+    color: #6c6c6c;
+    font-size: 18px;
+    line-height: 24px;
+    vertical-align: bottom;
+  }
+}
+
+.ore-invoice-services {
+  table {
+    width:100%;
+    border:0;
+    border-collapse:collapse;
+  }
+
+  td {
+    background-color:#f7f8f8;
+    font-family:'PTSansCaption',Tahoma, Geneva, sans-serif;
+    font-size:15px;
+    //color:#1f1f1f;
+    padding:10px 10px 10px 18px;
+  }
+
+  tr:nth-child(even) td {
+    background-color:#eceff0;
+  }
+
+  &__price {
+    width:150px;
+  }
+
+  &__delim {
+    padding:0 15px;
+    height:1px;
+    
+    &:after {
+      content: '';
+      display: block;
+      border-width: 0 0 1px 0;
+      border-style: solid;
+      border-color: #c4cdd6;
+    }
+  }
+}
+
+.ore-invoice-actions {
+  padding: 5px 15px;
+}

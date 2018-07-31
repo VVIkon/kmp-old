@@ -1,0 +1,122 @@
+$wrapper-border-radius:5px;
+
+.mwbox-overlay {
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  width:auto;
+  height:auto;
+  padding:0;
+  margin:0;
+  background-color:rgba(0,0,0,0.5);
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  text-align:center;
+  z-index:101;
+  overflow: auto;
+  overflow-y: scroll;
+
+  &--high {
+    z-index:201;
+  }
+}
+
+.mwbox-tbl {
+  display:table;
+  width:100%;
+  height:100%;
+}
+
+.mwbox-cell {
+  display:table-cell;
+  width:100%;
+  height:100%;
+  vertical-align:middle;
+}
+
+.mwbox-wrapper {
+  display:inline-block;
+  width:600px;
+  padding:10px;
+  margin:10px 0;
+  background-color:#fff;
+  border-radius:$wrapper-border-radius;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  text-align:left;
+  font-family:'PTSansCaption',Tahoma, Geneva, sans-serif;
+
+  &--warning {
+    color: #96642e;
+    background-color: #fff0c6;
+
+    .mwbox-header {
+      border-color: #f6e197;
+      color: #96642e;
+    }
+  }
+
+  &--success {
+      color: #168949;
+      background-color: #daedd0;
+
+      .mwbox-header {
+        border-color: #c7e4b8;
+        color: #168949;
+      }
+  }
+
+  &--error {
+      color: #c9220a;
+      background-color: #fde9e6;
+
+      .mwbox-header {
+        border-color: #fedbd4;
+        color: #c9220a;
+      }
+  }
+}
+
+.mwbox-header {
+  padding:5px;
+  overflow:hidden;
+  font-size:16px;
+  font-weight:bold;
+  border-radius:$wrapper-border-radius $wrapper-border-radius 0 0;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  border-width:0 0 1px 0;
+  border-style:solid;
+  border-color:#ccc;
+  color: #1774ac;
+
+  .kmpicon {
+    font-size:20px;
+    vertical-align: middle;
+  }
+}
+
+.mwbox-content {
+  padding:10px 0;
+  font-size:14px;
+  border-radius:0 0 $wrapper-border-radius $wrapper-border-radius;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.mwbox-buttons {
+  margin-top: 5px;
+  text-align: center;
+
+  .btn {
+    margin: 0 5px;
+    min-width: 120px;
+    text-align: center;
+  }
+}

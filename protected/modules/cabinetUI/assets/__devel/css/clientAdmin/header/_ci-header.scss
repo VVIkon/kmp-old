@@ -1,0 +1,27 @@
+.ci-header {
+  width: 920px;
+  padding: 10px 15px;
+  border: 1px solid #c4cdd6;
+  background: #fff;
+  text-decoration: none;
+  @include box-sizing(border-box);
+  @include clearfix();
+
+  &__company-name {
+    height: 35px;
+    margin-right: 30px;
+    line-height: 35px;
+    vertical-align: middle;
+    font-family: 'Kelson sans';
+    font-size: 20px;
+    font-weight: normal;
+    color: #3081b3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__company-actions {
+    height: 25px;
+  }
+}

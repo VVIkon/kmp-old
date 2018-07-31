@@ -1,0 +1,13 @@
+.tp-travel-policy-rule {
+  position: relative;
+  line-height: 24px;
+
+  &__actions {
+    float: right;
+    padding-left: 10px;
+  }
+
+  &__name-empty {
+    color: #999;
+  }
+}

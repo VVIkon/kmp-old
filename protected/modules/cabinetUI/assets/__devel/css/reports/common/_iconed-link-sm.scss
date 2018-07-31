@@ -1,0 +1,34 @@
+.iconed-link-sm {
+  display: inline-block;
+  padding-left: 25px;
+  height: 28px;
+  border: none;
+  line-height: 28px;
+  background: none;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left center;
+  text-align: left;
+  white-space: nowrap;
+  font-size: 18px;
+  font-family: 'Kelson Sans';
+  color: #3798d6;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover:not(:disabled) {
+    opacity: 0.85;
+  }
+
+  &:disabled {
+    color: #afafaf;
+    text-decoration: none;
+    cursor: default;
+    background-image: url(/app/img/common/plus-small-disabled.png);
+  }
+
+  &--add {
+    background-image: url(/app/img/common/plus-small.png);
+  }
+}

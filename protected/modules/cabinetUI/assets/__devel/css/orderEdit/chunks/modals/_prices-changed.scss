@@ -1,0 +1,47 @@
+.modal-prices-changed {
+    font-size:14px;
+    color:#96642e;
+
+    &__header {
+        margin: 10px 0;
+        text-align: center;
+        font-size: 19px;
+        font-weight: bold;
+        color: #96642e;
+    }
+
+    &__pricing-table {
+        width:100%;
+        border-collapse: collapse;
+        border: 1px solid #734321;
+        border-radius: 7px;
+
+        th,td {
+            padding:5px;
+        }
+
+        th {
+            font-size:16px;
+            color: #fff5d9;
+            background-color: #96642e;
+        }
+
+        td {
+            background-color: #eec984;
+            color: #461a00;
+        }
+    }
+
+    &__arrow {
+        width:30px;
+        font-size:20px;
+        color: #461a00;
+    }
+
+    &__question {
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        color: #96642e;
+    }
+}

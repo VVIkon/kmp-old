@@ -1,0 +1,23 @@
+.service-form-touristlist {
+  &__col-headers {
+    &:after {
+      content:'';
+      display:table;
+      clear:both;
+      margin-bottom:10px;
+    }
+  }
+
+  &__milecard-type {
+    padding-left:0;
+    padding-right:0;
+  }
+
+  &__empty {
+    padding-left:15px;
+    padding-top:15px;
+    color:#871606;
+    font-weight:bold;;
+    font-size:16px;
+  }
+}

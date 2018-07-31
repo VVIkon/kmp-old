@@ -1,0 +1,25 @@
+.ci-custom-field-form {
+  &__option-list-label {
+    position: relative;
+  }
+
+  &__load-options-from-file {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    @include box-sizing(border-box);
+    cursor: pointer;
+
+    &:hover {
+      color: #1774ac;
+    }
+
+    .kmpicon {
+      font-size: 16px;
+    }
+  }
+}

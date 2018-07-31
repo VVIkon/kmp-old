@@ -1,0 +1,133 @@
+.service-avia-segment {
+  &__number {
+    width:90px;
+    padding:7px 2px 2px 2px;
+    border-width:0 1px 0 1px;
+    border-style:dashed;
+    border-color:#c4cdd6;
+    vertical-align:middle;
+    text-align:center;
+    font-weight:bold;
+    color:#747474;
+  }
+
+  &__plane-type {
+    display:block;
+    font-size:11px;
+    color:#3e3e3e;
+  }
+
+  &__class {
+    width:24px;
+    padding:7px 2px 2px 2px;
+    border-width:0 1px 0 0;
+    border-style:dashed;
+    border-color:#c4cdd6;
+    vertical-align:middle;
+    text-align:center;
+
+    i {
+      display:inline-block;
+      width:16px;
+      height:16px;
+      border-radius:3px;
+      background-color:#6e8fbb;
+      line-height:16px;
+      vertical-align:middle;
+      text-align:center;
+      font-size:14px;
+      font-style: normal;
+      color:#fff;
+      cursor:pointer;
+    }
+  }
+
+  &__point {
+    width:256px;
+    padding:7px 2px 2px 10px;
+    vertical-align:middle;
+  }
+
+  &__point-airport {
+    cursor:pointer;
+  }
+
+  &__date {
+    padding:0 2px 5px 10px;
+    color:#267ab0;
+    vertical-align:middle;
+  }
+
+  &__date-time {
+    font-weight:bold;
+  }
+
+  &__time {
+    padding:0 2px 5px 2px;
+    vertical-align:middle;
+    text-align:center;
+    font-size:12px;
+    color:#3e6e53;
+
+    .kmpicon {
+      font-size:14px;
+      text-decoration:none;
+    }
+  }
+
+  &__arrow {
+    padding:7px 2px 2px 2px;
+    text-align:center;
+    vertical-align: bottom;
+
+    .kmpicon {
+      position:relative;
+      top:5px;
+      color:#309f38;
+      font-size:24px;
+    }
+  }
+
+  &__transporter,
+  &__stops {
+    padding: 0 2px 5px 10px;
+    vertical-align: top;
+    font-size: 12px;
+    color: #555;
+  }
+
+  &__transporter {
+    .kmpicon {
+      font-size: 14px;
+    }
+  }
+  
+  &__stops {
+    .kmpicon {
+      font-size: 14px;
+      color: #ecb51c;
+    }
+  }
+
+  &__waiting {
+    text-align:center;
+    padding-top:7px;
+    padding-bottom:7px;
+    border-width:1px 0 1px 1px;
+    border-style:dashed;
+    border-color:#c4cdd6;
+
+    .kmpicon {
+      font-size:18px;
+    }
+  }
+
+  @each $trip,$color in $flight-colors {
+    @at-root .service-avia-trip:nth-child(#{$trip}) #{&}__arrow .kmpicon,
+    .service-avia-trip:nth-child(#{$trip}) #{&}__transporter .kmpicon,
+    .service-avia-trip:nth-child(#{$trip}) #{&}__waiting .kmpicon {
+      color:$color;
+    }
+  }
+
+}

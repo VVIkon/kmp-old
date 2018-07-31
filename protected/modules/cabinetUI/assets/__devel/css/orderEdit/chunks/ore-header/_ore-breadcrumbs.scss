@@ -1,0 +1,16 @@
+.ore-breadcrumbs {
+    font-family: 'PTSansCaption',Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom:15px;
+
+    &__delim {
+      font-style: normal;
+    }
+
+    a,
+    span {
+      color: #1d5a99;
+    }
+}

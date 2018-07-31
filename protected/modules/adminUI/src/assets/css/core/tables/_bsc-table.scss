@@ -1,0 +1,29 @@
+.bsc-table {
+  border: 1px solid #314957;
+  
+  td,
+  th {
+    border-bottom: 1px solid #c4cdd6;
+    border-right: 1px solid #dbe1e9;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  th {
+    padding: 10px;
+    background-color: #314957;
+    color: #fff;
+    border-color: #5d6d76;
+
+  }
+
+  td {
+    padding: 7px 10px;
+  }
+
+  tr:last-child td {
+    border-bottom: 1px solid #314957;
+  }
+}

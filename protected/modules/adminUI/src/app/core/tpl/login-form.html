@@ -1,0 +1,36 @@
+<div class="login-form-overlay__tbl">
+  <div class="login-form-overlay__cell">
+    <div class="login-form-overlay__wrapper login-form">
+      <div class="login-form__header">
+        <i class="kmpicon kmpicon-info"></i> Запрос авторизации
+      </div>
+      <div class="login-form__notifications">
+        <div class="login-form-notification login-form-notification--info">
+          <i class="kmpicon kmpicon-info"></i>
+          Ваша сессия истекла, авторизуйтесь, пожалуйста
+        </div>
+        <div *ngFor="let warning of warnings" class="login-form-notification login-form-notification--error">
+          <i class="kmpicon kmpicon-warning"></i>
+          {{warning.text}}
+        </div>
+      </div>
+      <div class="login-form__fields">
+        <table>
+          <tbody>
+            <tr>
+              <td><label for="login-form--login">Логин:</label></td>
+              <td><input type="text" [(ngModel)]="login" id="login-form--login" placeholder="Логин"></td>
+            </tr>
+            <tr>
+              <td><label for="login-form--password">Пароль:</label></td>
+              <td><input type="password" [(ngModel)]="password" id="login-form--password" placeholder="Пароль"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="login-form__buttons">
+        <button (click)="onSubmit()" type="button" class="btn btn-medium btn-blue">Войти</button>
+      </div>
+    </div>
+  </div>
+</div>

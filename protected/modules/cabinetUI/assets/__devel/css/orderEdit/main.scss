@@ -1,0 +1,90 @@
+/* use mixins */
+@import "../../../../../../../app/__devel/css/core/bootstrap/mixins";
+@import "../../../../../../../app/__devel/css/mixins/kmpicons-mixin";
+
+//@import "../icons/order-status";
+//@import "../icons/order-services";
+//@import "../icons/service-statuses";
+//@import "../icons/invoice-statuses";
+
+$color-date-from:#309f38;
+$color-date-to:#3439b5;
+
+@import "chunks/custom-field";
+@import "chunks/iconed-link";
+@import "chunks/add-service-block";
+@import "chunks/footer";
+
+// header 
+@import "chunks/ore-header/ore-breadcrumbs";
+@import "chunks/ore-header/ore-header";
+@import "chunks/ore-header/ore-header-info";
+@import "chunks/ore-header/ore-header-controls";
+
+// forms
+@import "chunks/ore-documents";
+@import "chunks/ore-set-invoice";
+@import "chunks/ore-history";
+
+// services tab
+@import "chunks/services/tab-services";
+@import "chunks/services/service-form/service-form";
+@import "chunks/services/service-form/service-form-header-info";
+@import "chunks/services/service-form/service-form-shortinfo";
+@import "chunks/services/service-form/service-form-info-field";
+@import "chunks/services/service-form/service-form-flags";
+@import "chunks/services/service-form/service-form-add-services-list";
+@import "chunks/services/service-form/service-form-custom-fields";
+@import "chunks/services/service-form/service-form-tp-violations";
+@import "chunks/services/service-form/service-form-touristlist";
+@import "chunks/services/service-form/service-form-tourist";
+@import "chunks/services/service-form/service-form-tos-agreement";
+@import "chunks/services/service-form/service-form-actions";
+@import "chunks/services/price-factors-tooltip";
+// avia service
+@import "chunks/services/service-avia/service-avia";
+@import "chunks/services/service-avia/service-avia-header";
+@import "chunks/services/service-avia/service-avia-trip";
+@import "chunks/services/service-avia/service-avia-triproute";
+@import "chunks/services/service-avia/service-avia-tripsegments";
+@import "chunks/services/service-avia/service-avia-segment";
+@import "chunks/services/service-avia/service-avia-tripinfo";
+@import "chunks/services/service-avia/service-avia-tripinfo-baggage";
+@import "chunks/services/service-avia/service-avia-flags";
+@import "chunks/services/service-avia/service-avia-pnr-baggage";
+@import "chunks/services/service-avia/service-avia-minimal-price";
+@import "chunks/services/service-avia/service-avia-ticket";
+@import "chunks/services/service-avia/service-avia-loyalty-program";
+// hotel service
+@import "chunks/services/service-hotel/service-hotel-header";
+@import "chunks/services/service-hotel/service-hotel-offer";
+@import "chunks/services/service-hotel/service-hotel-minimal-price";
+@import "chunks/services/service-hotel/service-hotel-voucher";
+@import "chunks/services/service-hotel/service-hotel-add-service";
+// additional service
+@import "chunks/services/additional-service";
+
+@import "chunks/services/hotel-info";
+@import "chunks/services/avs-fare-rule";
+@import "chunks/services/ore-service-manualedit";
+
+// tourists tab
+@import "chunks/tourists/ore-tourist-list";
+@import "chunks/tourists/ore-tourist";
+
+// payment tab
+@import "chunks/payment/ore-payment";
+@import "chunks/payment/ore-payment-services";
+@import "chunks/payment/ore-invoice-list";
+@import "chunks/payment/ore-invoice";
+
+// modals
+@import "chunks/modals/prices-changed";
+@import "chunks/modals/accept-book-terms";
+@import "chunks/modals/book-change";
+@import "chunks/modals/send-to-manager";
+@import "chunks/modals/book-cancel";
+@import "chunks/modals/multi-book-cancel";
+
+// common
+@import "chunks/send-via-email";

@@ -1,0 +1,15 @@
+.ore-invoice-list {
+  padding:0;
+  margin-bottom: 10px;
+}
+
+.ore-invoice-list-actions {
+  padding:0;
+  margin-bottom:20px;
+
+  /** TODO: rework iconed-link */
+  .iconed-link {
+    display:inline-block;
+    margin-right: 25px;
+  }
+}

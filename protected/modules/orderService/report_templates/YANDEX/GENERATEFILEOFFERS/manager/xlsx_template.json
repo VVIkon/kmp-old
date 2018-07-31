@@ -1,0 +1,59 @@
+{
+  "mainHeaderTextStyle": {
+    "font": {
+      "size": 14,
+      "color": "0EE1234",
+      "backColor": "0EE1234",
+      "style": "bold"
+    },
+    "cell": {
+      "valign": "up",
+      "halign": "left",
+      "dataFormat": "text",
+      "indent": 2
+    },
+    "imageUrl": ""
+  },
+  "headerTextStyle": [
+    {
+      "font": {
+        "size": 14,
+        "color": "0EE1234",
+        "backColor": "0EE1234",
+        "style": "bold"
+      },
+      "cell": {
+        "valign": "up",
+        "halign": "left",
+        "dataFormat": "text",
+        "indent": 2
+      },
+      "imageUrl": ""
+    },
+    {
+      "font": {
+        "size": 12,
+        "color": "0EE1234",
+        "backColor": "0EE1234",
+        "style": "underline"
+      },
+      "cell": {
+        "valign": "up",
+        "halign": "left",
+        "dataFormat": "text",
+        "indent": 2
+      },
+      "imageUrl": ""
+    }
+  ],
+  "footerTextStyle": [],
+  "columns": [
+    {
+      "headerRow": [],
+      "grouppedHeaderRow": {},
+      "grouppedRow": {},
+      "grouppedFooterRow": {},
+      "footerRow": []
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+.modal-create-order {
+  font-size: 15px;
+  color: #575757;
+
+  &__header {
+    padding: 10px;
+    vertical-align: bottom;
+    font-size: 19px;
+    font-weight: bold;
+    color: #305d79;
+
+    .kmpicon {
+      vertical-align: bottom;
+      font-size: 26px;
+    }
+  }
+}
+
+.modal-create-order-company-select {
+  padding: 5px 0;
+  border-radius: 7px;
+  border: 1px solid #c4cdd6;
+  background-color: #f5f5fe;
+
+  &__field,
+  &__field-label {
+    height: 45px;
+    vertical-align: middle;
+  }
+
+  &__field-label {
+    padding: 0 5px 0 15px;
+    line-height: 35px;
+    white-space: nowrap;
+    overflow: visible;
+    font-family: 'Kelson Sans';
+    font-size: 18px;
+    color: #8d959d;
+  }
+
+  &__field {
+    padding: 0 20px;
+    width: 280px;
+  }
+
+  &__field-control {
+    .selectize-input {
+      height: 35px !important;
+      white-space: nowrap;
+      -webkit-transition: background-color 300ms linear;
+      -moz-transition: background-color 300ms linear;
+      -o-transition: background-color 300ms linear;
+      -ms-transition: background-color 300ms linear;
+      transition: background-color 300ms linear;
+
+      &.warning {
+        background-color:#fec8bc !important;
+      }
+    }
+
+    &.selectize-control {
+      height:35px;
+    }
+  }
+
+  &__control-item {
+    display: inline-block;
+    width:98%;
+    height:25px;
+    line-height:25px;
+    vertical-align:top;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  &__control-option {
+    height:40px;
+    line-height:30px;
+    vertical-align:top;
+    position:relative;
+    padding-top:3px !important;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #c7d4e0;
+    @include box-sizing(border-box);
+
+    &.active {
+      background-color:#e9f9e8;
+    }
+  }
+
+  &--expired {
+    color: #ff4949 !important;
+  }
+}

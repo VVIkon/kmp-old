@@ -1,0 +1,126 @@
+<h1 class="dashboard__header">Пользователи</h1>
+<div class="users">
+  <div class="cform-row u-1/3">
+    <label>
+      <div class="cform-row__label u-1/2">
+        <span>Выберите компанию: </span>
+      </div>
+      <div class="cform-row__field u-1/2">
+        <wgt-select 
+          [data]="companies" 
+          [state]="companiesSelectorState"
+          [valueField]="'id'"
+          [labelField]="'name'"
+          (onType)="onCompanyType($event)"
+          (onChange)="onCompanySelect($event)"
+        ></wgt-select>
+      </div>
+    </label>
+  </div>
+  <div *ngIf="selectedCompany">
+    <div *ngIf="!users" class="u-1/2"><div  class="spinner"></div></div>
+    <div *ngIf="users">
+      <div class="actions-panel">
+        <button 
+          type="button" 
+          class="btn btn-medium btn-darkblue"
+          (click)="openModal('users__load-from-file')"
+        >
+          Загрузить список из xlsx
+        </button>
+      </div>
+      <table class="bsc-table users__list">
+        <thead>
+          <th class="users__header-id">#</th>
+          <th class="users__header-name">ФИО</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td class="users__id">{{user.id}}</td>
+            <td (click)="onUserSelect(user)" class="users__name">{{user.fullName}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- загрузка пользователей из xlsx файла -->
+<kt-modal 
+  id="users__load-from-file"
+  [header]="'Загрузка пользователей из файла'"
+  [size]="'medium'"
+  [scroll]="'vertical'"
+>
+  <div class="cform-row">
+    <div class="cform-row__field">
+      <wgt-file-loader (onChange)="onUsersFileSelect($event)"></wgt-file-loader>
+    </div>
+  </div>
+  <div *ngIf="usersLoadMessage" class="notabene-label notabene-label--error">
+    {{usersLoadMessage}}
+  </div>
+  <div *ngIf="userFieldsMapper">
+    <table class="bsc-table u-fullwidth">
+      <thead>
+        <th>Поле в файле</th>
+        <th>Поле в структуре пользователя</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let field of userFieldsMapper.fieldsMap">
+          <td>{{field.header}}</td>
+          <td>
+            <wgt-select
+              [data]="userFieldsMapper.fieldOptions" 
+              [valueField]="'field'"
+              [labelField]="'name'"
+              [baseValue]="field.linkedField"
+              (onChange)="onUserFieldMapped(field, $event)"
+            ></wgt-select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="cform-row">
+      <div class="cform-row__field">
+        <button class="btn btn-medium btn-green" (click)="processUsersList()">Загрузить список сотрудников</button>
+      </div>
+    </div>
+  </div>
+</kt-modal>
+
+<kt-modal
+  id="users__loaded-users"
+  [header]="'Список загруженных пользователей'"
+  [size]="'large'"
+  [scroll]="'both'"
+>
+  <div *ngIf="parsedUsers">
+      <div class="cform-row">
+        <div class="cform-row__field">
+          <button class="btn btn-medium btn-green" (click)="saveUsersList()">Сохранить сотрудников</button>
+        </div>
+      </div>
+      <div *ngIf="parsedUsersSaved" class="notabene-label notabene-label--success">
+        Данные пользователей сохранены
+      </div>
+      <table class="bsc-table u-fullwidth">
+        <thead>
+          <th *ngFor="let header of parsedUserColumns">{{header}}</th>
+        </thead>
+        <tbody>
+          <tr 
+            *ngFor="let user of parsedUsersArray" 
+            [class.users__load-error]="user.status === 1" 
+            [class.users__loaded]="user.status === 0" 
+            [title]="user.error"
+          >
+            <td *ngFor="let field of user.row">{{field}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div *ngIf="parsedUsersSaved" class="notabene-label notabene-label--success">
+        Данные пользователей сохранены
+      </div>
+  </div>
+</kt-modal>

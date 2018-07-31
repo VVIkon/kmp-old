@@ -1,0 +1,59 @@
+.custom-field {
+  height: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  @include box-sizing(border-box);
+
+  &__wrapper {
+    display: block;
+    position: relative;
+  }
+  
+  &__label {    
+    margin-bottom: 2px;
+    display: block;
+    font-size: 15px;
+    color: #8c8c8c;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__required-mark {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 10px;
+    font-size: 9px;
+    vertical-align: top;
+    line-height: 12px;
+    color: #305d79;
+  }
+
+  &--required &__label {
+    color: #305d79;
+  }
+
+  &__control {
+    height: 28px;
+    position: relative;
+    @include box-sizing(border-box);
+  }
+
+  &__actions {
+    padding-top: 23px;
+  }
+
+  &--textarea {
+    height: 120px;
+  }
+
+  &--textarea &__control {
+    height: 88px;
+    padding-bottom: 5px;
+
+    textarea {
+      height: 78px;
+    }
+  }
+}

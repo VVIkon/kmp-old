@@ -1,0 +1,36 @@
+<h1 class="dashboard__header">Редактирование пользователя</h1>
+<div *ngIf="!user" class="u-1/2"><div  class="spinner"></div></div>
+<div *ngIf="user" class="user-detail">
+  <h2 class="page-heading">Пользователь: {{user?.fullName}}</h2>
+  <div>
+    <div class="cform-row u-1/3">
+      <div class="cform-row__label">
+        <span>Текущая роль:  {{currentRole?.name}}</span>
+      </div>
+    </div>
+    <div class="cform-row u-1/3">
+      <label>
+        <div class="cform-row__label">
+          <span>Новая роль: </span>
+        </div>
+        <div class="cform-row__field">
+          <wgt-select class="cform-control--fw"
+            [data]="userRoles" 
+            [state]="rolesSelectorState"
+            [baseValue]="user?.roleId"
+            [valueField]="'id'"
+            [labelField]="'name'"
+            (onChange)="onUserRoleSelect($event)"
+          ></wgt-select>
+        </div>
+      </label>
+    </div>
+    <button class="btn btn-medium btn-green"
+      (click)="onSubmitRoleChange()" 
+      [disabled]="!selectedRole?.id"
+      type="button"
+    >
+      Сохранить
+    </button>
+  </div>
+</div>

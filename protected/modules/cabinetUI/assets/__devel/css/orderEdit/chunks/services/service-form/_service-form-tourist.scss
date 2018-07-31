@@ -1,0 +1,30 @@
+.service-form-tourist {
+  margin-bottom:7px;
+  vertical-align:middle;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+    margin-bottom: 5px;
+  }
+
+  &__info {
+    color: #1774ac;
+    font-size: 18px;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__extra {
+    line-height: 28px;
+  }
+
+  &__ticket-number {
+    color: #267ab0;
+    line-height: 28px;
+    font-size: 16px;
+  }
+}

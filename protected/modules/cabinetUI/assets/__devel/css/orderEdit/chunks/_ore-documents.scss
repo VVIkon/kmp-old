@@ -1,0 +1,201 @@
+/* .ore-documents { } */
+
+.ore-documents-list {
+  position: relative;
+  z-index: 3;
+  padding: 0;
+  border-radius: 10px 0 0 10px;
+  @include box-shadow(-2px 2px 8px 0px rgba(0,0,0,0.2));
+  overflow: hidden;
+
+  td {
+    padding: 7px 5px 7px 15px;
+    border: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__empty {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1773ac;
+  }
+
+  &__delim {
+    width: 1px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+
+    i {
+      height: 100%;
+      width: 1px;
+      border-width: 0 1px 0 0;
+      border-style: solid;
+      border-color: #c4cdd6;
+      @include box-sizing(border-box);
+    }
+  }
+
+  &__check,
+  &__download,
+  &__print {
+    width: 20px;
+  }
+
+  /** TODO remove paddings from table? */
+  &__download {
+    padding-left: 5px !important;
+    padding-right: 0 !important;
+  }
+
+  &__print {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    .kmpicon {
+      font-size: 18px;
+    }
+  }
+
+  &__name {
+    width: 27%;
+  }
+
+  &__comment {
+    color: #9a9a9a;
+  }
+}
+
+.ore-documents-add {
+  position: relative;
+  z-index: 2;
+  height: 60px;
+  margin-top: -10px;
+  padding: 15px 15px 5px 15px;
+  border: 1px solid #dadada;
+  border-right: none;
+  border-radius: 0 0 0 5px;
+  @include box-sizing(border-box);
+  background: #ecf8ff;
+
+  &__wrapper {
+    height: 100%;
+  }
+
+  &__panel {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__delim {
+    width: 1px;
+    padding: 0 10px;
+
+    i {
+      width: 1px;
+      height: 100%;
+      border-width: 0 1px 0 0;
+      border-style: solid;
+      border-color: #dfe4e5;
+      @include box-sizing(border-box);
+    }
+  }
+
+  &__upload {
+    height: 100%;
+    width: 33%;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    label {
+      display: inline;
+      color: #3798d6;
+      font-family: 'PTSansCaption',Tahoma, Geneva, sans-serif;
+      font-size: 14px;
+      line-height: 36px;
+      font-weight: bold;
+      text-decoration: underline;
+      vertical-align: middle;
+
+      .kmpicon {
+        color: #9DB6C5;
+        margin-right: 15px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__upload-field {
+    display: none;
+  }
+
+  &__upload-progress {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    height: 20px;
+    border: 1px solid #1773ac;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    vertical-align: middle;
+  }
+
+  &__upload-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-image: url('/app/img/common/progress-loader.png');
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    background-position: left top;
+    z-index: 1;
+
+    &.active {
+      background-image: url('/app/img/common/progress-loader.gif');
+    }
+  }
+
+  &__upload-progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1773ac;
+    z-index: 2;
+  }
+
+  &__comment {
+    height: 100%;
+    vertical-align: middle;
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.ore-documents-actions {
+  margin-top: 10px;
+  margin-bottom: 1px;
+}

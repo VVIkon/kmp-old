@@ -1,0 +1,32 @@
+.modal-book-cancel {
+  font-size:15px;
+  color:#575757;
+
+  &__info {
+    margin-top:10px;
+    padding:10px;
+    border-radius:7px;
+    border: 1px solid #c4cdd6;
+    background-color: #f7f7fe;
+    @include box-sizing(border-box);
+    color: #464646;
+  }
+
+  &__label {
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+    color: #305d79;
+  }
+
+  &__label-text {
+    font-size:16px;
+  }
+
+  &__question {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1773ac;
+  }
+}

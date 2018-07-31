@@ -1,0 +1,77 @@
+.service-avia-header {
+  &-dates {
+   width:100px;
+   white-space:nowrap;
+   text-align: right;
+
+   &__date-to {
+     font-size:16px;
+     line-height:20px;
+     font-weight:bold;
+     color:#60cb90;
+     vertical-align:bottom;
+
+     @each $trip,$color in $flight-colors {
+       &:nth-child(#{$trip}) { color:$color; }
+     }
+   }
+  }
+
+  &-flights {
+   white-space: nowrap;
+
+   &__flight {
+     font-size: 15px;
+     line-height: 20px;
+     vertical-align: bottom;
+   }
+
+   &__iata {
+     font-style: normal;
+     font-weight: bold;
+   }
+  }
+
+  &-name {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  &-passengers {
+   width: 200px;
+   font-size: 18px;
+   font-weight: bold;
+   color: #3798d6;
+   text-align: center;
+
+   .kmpicon {
+     font-size: 30px;
+     vertical-align: middle;
+   }
+  }
+
+  &-extra {
+    width: 200px;
+
+    &__pnr {
+      font-size: 16px;
+      font-weight: bold;
+      cursor: text;
+    }
+
+    &__ticket-download {
+      margin: 0 10px;
+      text-decoration: none !important;
+      cursor: pointer;
+
+      .kmpicon {
+        font-size: 26px;
+        color: #0f5313;
+      }
+
+      &:hover .kmpicon {
+        color: #1b8e0b;
+      }
+    }
+  }
+}

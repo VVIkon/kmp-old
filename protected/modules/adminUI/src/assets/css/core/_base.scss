@@ -1,0 +1,108 @@
+html,
+body {
+    width:100%;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: 'PTSansCaption',Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/*==================
+ lists
+====================*/
+
+// markers should be inside block
+ul {
+    padding-left: 20px;
+}
+
+/*==================
+ form controls
+====================*/
+
+label {
+    cursor:pointer;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+  }
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 4px 7px;
+    font-size: 14px;
+    outline: none !important;
+    background: #ffffff;
+
+    &.error,
+    &:focus {
+        padding: 3px 6px;
+        border-radius: 4px;
+        border-width: 2px;
+        outline: none !important;
+    }
+
+    &.error {
+        border-color: #ff4949;
+
+        &::-webkit-input-placeholder {color: #ff4949;}
+        &::-moz-placeholder          {color: #ff4949;}
+        &:-moz-placeholder           {color: #ff4949;}
+        &:-ms-input-placeholder      {color: #ff4949;}
+    }
+
+    &:focus {
+      border-color: #70b1e2;
+    }
+
+    &[disabled] {
+      background: #fafdf9;
+      background: -moz-linear-gradient(top,  #fafdf9 0%, #f0f1f5 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafdf9), color-stop(100%,#f0f1f5));
+      background: -webkit-linear-gradient(top,  #fafdf9 0%,#f0f1f5 100%);
+      background: -o-linear-gradient(top,  #fafdf9 0%,#f0f1f5 100%);
+      background: -ms-linear-gradient(top,  #fafdf9 0%,#f0f1f5 100%);
+      background: linear-gradient(to bottom,  #fafdf9 0%,#f0f1f5 100%);
+    }
+}
+
+input,
+select {
+    height: 28px;
+}
+
+textarea {
+    resize: none;
+    min-height: 80px;
+}
+
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder,
+input:-moz-placeholder,
+textarea::-webkit-input-placeholder,
+textarea::-moz-placeholder,
+textarea:-ms-input-placeholder,
+textarea:-moz-placeholder,
+select::-webkit-input-placeholder,
+select::-moz-placeholder,
+select:-ms-input-placeholder,
+select:-moz-placeholder { 
+    color: #c5c5c5; 
+}

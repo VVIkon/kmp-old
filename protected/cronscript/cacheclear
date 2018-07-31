@@ -1,0 +1,3 @@
+#(файл должен быть с правами на запуск! например -rwxr-xr-x)
+#!/bin/bash
+php /var/www/kmp/dev.kmp.travel/protected/yiic.php CacheClear clear

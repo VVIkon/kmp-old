@@ -1,0 +1,79 @@
+.avs-fare-rule {
+  &__full-segment-name {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1774b8;
+  }
+
+  &__empty {
+    color: #777;
+  }
+}
+
+.avs-fare-rule-tab {
+  border-left-width:4px;
+  border-left-style:solid;
+  border-left-color:#41abde;
+  padding-left:45px;
+  padding-right:200px;
+}
+
+.avs-fare-rule-flags {    
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: #41abde;
+
+  &__label,
+  &__value {
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #c3deeb;
+    line-height:20px;
+    vertical-align: baseline;
+  }
+
+  &__label {
+    border-width:1px 0 1px 1px;
+    padding:7px 10px 7px 15px;
+    font-size: 16px;
+  }
+  
+  &__value {
+    border-width:1px 1px 1px 0;
+    padding:7px 15px 7px 10px;
+
+    .kmpicon {
+      font-size:20px;
+    }
+
+    .kmpicon-success {
+      color: #4fb17b;
+    }
+
+    .kmpicon-close {
+      color: #82190a;
+    }
+
+    .kmpicon-unknown {
+      color:#9c9c9c;
+    }
+  }
+}
+
+.avs-fare-rule-text {
+  margin-top: 30px;
+  margin-bottom:15px;
+
+  &__label {
+    margin:10px 0 5px 0;
+    font-weight:bold;
+    font-size:16px;
+    color:#555555;
+  }
+
+  &__block {
+    font-size:15px;
+    color:#777777;
+  }
+}

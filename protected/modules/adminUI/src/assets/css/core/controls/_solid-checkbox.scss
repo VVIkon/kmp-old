@@ -1,0 +1,41 @@
+.solid-checkbox {
+  display: inline-block;
+  line-height: inherit;
+  vertical-align: middle;
+  font-size: 18px;
+
+  .control {
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    &:after {
+     content: '';
+     display: block;
+     width: 18px;
+     height: 18px;
+     background: url('../img/solid-controls.png') no-repeat;
+     background-position: 0 -72px;
+     cursor: pointer;
+     user-select: none;
+    }
+  }
+
+  input[type="checkbox"]:checked+.control {
+    &:after {
+      background-position: 0 -90px;
+    }
+  }
+
+  input[type="checkbox"]:disabled+.control {
+    &:after {
+      background-position: 0 -108px;
+    }
+  }
+
+  input[type="checkbox"]:checked:disabled+.control {
+    &:after {
+      background-position: 0 -126px;
+    }
+  }
+}

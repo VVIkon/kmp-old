@@ -1,0 +1,36 @@
+$prop-switch--base-bg-color: #deddf1;
+$prop-switch--hover-bg-color: #cac8ee;
+
+.prop-switch {
+    display: block;
+    padding: 9px;
+    border-width: 2px;
+    border-style: solid;
+    border-left-color: lighten($prop-switch--base-bg-color, 5%);
+    border-top-color: lighten($prop-switch--base-bg-color, 5%);
+    border-right-color: darken($prop-switch--base-bg-color, 5%);
+    border-bottom-color: darken($prop-switch--base-bg-color, 5%);
+    background-color: $prop-switch--base-bg-color;
+    line-height: 1.2;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+
+    &:hover {
+      border-left-color: lighten($prop-switch--hover-bg-color, 5%);
+      border-top-color: lighten($prop-switch--hover-bg-color, 5%);
+      border-right-color: darken($prop-switch--hover-bg-color, 5%);
+      border-bottom-color: darken($prop-switch--hover-bg-color, 5%);
+      background-color: $prop-switch--hover-bg-color;
+    }
+
+    .solid-checkbox {
+      margin-right: 5px;
+    }
+
+    &__label {
+      vertical-align: middle;
+    }
+}

@@ -1,0 +1,65 @@
+.service-hotel-offer {
+  position: relative;
+  padding-right: 80px;
+  margin-bottom: 15px;
+  @include box-sizing(border-box);
+  font-family:'PTSansCaption',Tahoma,Geneva,sans-serif;
+
+  &:before,
+  &:after {
+    content:'';
+    display:table;
+    clear:both;
+  }
+
+  &__wrapper {
+    position:relative;
+    padding:0;
+    border:1px solid #d1d9e2;
+    @include box-sizing(border-box);
+    background:#fff;
+  }
+
+  &__info {
+    width:100%;
+    font-size:15px;
+    border-collapse: collapse;
+    text-align:left;
+  }
+
+  &__info-icon {
+    width:34px;
+    text-align:center;
+    vertical-align:middle;
+    background-color:#c9e7f9;
+
+    .kmpicon {
+      font-size:22px;
+      //color:#1773ac;
+      color:#0c5683;
+    }
+  }
+
+  &__info-type {
+    width:180px;
+    padding:5px;
+    border-width:0 1px 0 0;
+    border-style:dashed;
+    border-color:#c4cdd6;
+    vertical-align:middle;
+    font-size:14px;
+    //color:#575757;
+    color:#0c5683;
+  }
+
+  &__info-data {
+    padding:5px 5px 5px 10px;
+    vertical-align:middle;
+    font-size:16px;
+    color:#222;
+  }
+
+  &__no-info-data {
+    color:#bebebe;
+  }
+}

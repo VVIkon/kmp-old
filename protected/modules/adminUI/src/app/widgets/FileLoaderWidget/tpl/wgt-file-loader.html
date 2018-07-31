@@ -1,0 +1,12 @@
+<label>
+  <input type="file" hidden (change)="onFileSelect($event)" multiple="false">
+  <span *ngIf="!file" class="wgt-file-loader__file-select">Выберите файл...</span>
+</label>
+<span *ngIf="file" class="wgt-file-loader__file-label">
+  {{file.name}}
+  <svg 
+    class="wgt-file-loader__deselect-file" 
+    [kt-icon]="'close'"
+    (click)="deselectFile($event)"
+  ></svg>
+</span>

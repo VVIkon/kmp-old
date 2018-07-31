@@ -1,0 +1,421 @@
+.ore-tourist {
+  margin-bottom: 20px;
+  position: relative;
+
+  &__form-wrapper {
+    display:none;
+  }
+
+  &.active &__form-wrapper {
+    display: block;
+  }
+
+  &__block-delim {
+    height: 1px;
+    border-width: 0 0 0 1px;
+    border-style: solid;
+    border-color: #c4cdd6;
+
+    hr {
+      margin: 0 auto;
+      height: 1px;
+      width: 99%;
+      border: 0;
+      background: #c4cdd6;
+    }
+  }
+
+  &__header,
+  &__form-part {
+    background-color: #ffffff;
+    margin: 0;
+    border-style: solid;
+    border-color: #c4cdd6;
+    position: relative;
+    -webkit-transition: background-color 500ms linear;
+    -moz-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      @include box-shadow(-2px 0 5px rgba(0, 0, 0, 0.1));
+      z-index: -1;
+    }
+  }
+
+  &__header {
+    padding: 5px 15px;
+  }
+
+  &__header-lock {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(25, 54, 79, 0.1);
+
+    .spinner-medium {
+      position: absolute;
+      top: 50%;
+      right: 50px;
+      margin-top: -20px;
+    }
+  }
+
+  &__form-part {
+    padding: 15px;
+    border-width: 0 0 0 1px;
+  }
+
+  &.active &__header,
+  &.active &__form-part {
+    background-color: #f5f5fe;
+  }
+
+  &.active &__header {
+    border-radius: 5px 0 0 0;
+    border-width: 1px 0 1px 1px;
+  }
+
+  &.active .row:last-child &__form-part {
+    border-width: 0 0 1px 1px;
+    border-radius: 0 0 0 5px;
+  }
+
+  &__remove {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background: #f5f6f8;
+    color: #6c5c5c;
+    font-size: 14px;
+    padding: 7px 10px 6px 14px;
+    background: -moz-linear-gradient(top, #f5f6f8 0%, #d8dbe0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f6f8), color-stop(100%, #d8dbe0));
+    background: -webkit-linear-gradient(top, #f5f6f8 0%, #d8dbe0 100%);
+    background: -o-linear-gradient(top, #f5f6f8 0%, #d8dbe0 100%);
+    background: -ms-linear-gradient(top, #f5f6f8 0%, #d8dbe0 100%);
+    background: linear-gradient(to bottom, #f5f6f8 0%, #d8dbe0 100%);
+    box-shadow: none;
+    border-radius: 0 0 5px 5px;
+    border-color: #c9d3dc;
+    text-transform: none;
+
+    .kmpicon {
+      color: #951705;
+    }
+
+    &:active {
+      box-shadow:none;
+    }
+
+    &:hover {
+      background: #ede1e1;
+      background: -moz-linear-gradient(top, #ede1e1 0%, #cdc6c9 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ede1e1), color-stop(100%,#cdc6c9));
+      background: -webkit-linear-gradient(top, #ede1e1 0%,#cdc6c9 100%);
+      background: -o-linear-gradient(top, #ede1e1 0%,#cdc6c9 100%);
+      background: -ms-linear-gradient(top, #ede1e1 0%,#cdc6c9 100%);
+      background: linear-gradient(to bottom, #ede1e1 0%,#cdc6c9 100%);
+    }
+  }
+
+  &__toggler {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 1px;
+    width: 100%;
+    height: 11px;
+    background: url('/app/img/arrowspan2.png') center top no-repeat;
+  }
+
+  &.active &__toggler {
+    top: auto;
+    bottom: 0;
+    background-image: url('/app/img/arrowspan.png');
+  }
+
+  &__tourleader-control {
+    padding:0 15px 0 0;
+    margin-bottom:12px;
+
+    label {
+      @include user-select(none);
+    }
+
+    span {
+      margin-right: 10px;
+      color: #6192b0;
+      font-size:18px;
+    }
+
+    input {
+      width: 60px;
+    }
+  }
+
+  &__control {
+    margin-bottom: 14px;
+    padding: 0 15px 0 0;
+
+    input,
+    select {
+      width:100%;
+    }
+
+    input[name="docseries"],
+    input[name="docnumber"],
+    input[name="docfirstname"],
+    input[name="docmiddlename"],
+    input[name="doclastname"] {
+      text-transform: uppercase;
+
+      &::-webkit-input-placeholder {text-transform:none;}
+      &::-moz-placeholder          {text-transform:none;} /* Firefox 19+ */
+      &:-moz-placeholder           {text-transform:none;} /* Firefox 18- */
+      &:-ms-input-placeholder      {text-transform:none;}
+    }
+  }
+
+  &__control-label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 15px;
+    color: #8c8c8c;
+  }
+
+  &__copy-name {
+    display:inline-block;
+    padding:5px;
+    height:28px;
+    @include box-sizing(border-box);
+    border-width:1px 1px 2px 1px;
+    border-style:solid;
+    border-color:#d3d3d3;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #82BEDE;
+    font-size:18px;
+    line-height: 13px;
+    outline:none;
+
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: #4EB2E4;
+    }
+    &:active {
+      border-width:2px 1px 1px 1px;
+    }
+    &:focus {
+      outline:2px solid #b9d7fe;
+    }
+  }
+
+  &__actions {
+    margin-top:10px;
+  }
+
+  &__alert {
+    margin-bottom:5px;
+    color: #ff4949;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  &__notify {
+    margin-bottom:5px;
+    color: #1773b1;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+.ore-tourist-info {
+  border-radius: 5px 0 0 5px;
+  border-width: 1px 0 1px 1px;
+  cursor: pointer;
+
+
+  &__main {
+    white-space: nowrap;
+    @include clearfix;
+  }
+
+  &__name,
+  &__new {
+    padding: 3px 0;
+    height: 25px;
+    @include box-sizing(content-box);
+    line-height: 25px;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: normal;
+    color: #222;
+    font-family: 'PTSansCaption',Tahoma, Geneva, sans-serif;
+  }
+
+  &__new {
+    color: #9d9d9d;
+    padding-bottom: 15px;
+  }
+
+  &__suggest {
+    padding: 5px 0;
+  }
+
+  &__contacts {
+    padding: 3px 0;
+    height: 22px;
+    @include box-sizing(content-box);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.ore-tourist-contacts {
+  &__item {
+    display: inline-block;
+    padding-right: 15px;
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 22px;
+    vertical-align: middle;
+
+    i {
+      color: #989a9d;
+      font-size:20px;
+    }
+  }
+}
+
+.ore-tourist-suggest {
+  padding: 16px 0;
+  @include clearfix;
+
+  &__field,
+  &__field-label {
+    height: 28px;
+    vertical-align: middle;
+  }
+
+  &__field-label {
+    padding: 0 15px 0 0;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: visible;
+    font-family: 'Kelson Sans';
+    font-size: 18px;
+    color: #8d959d;
+  }
+
+  &__field-control {
+    .selectize-input {
+      //height: 35px !important;
+      white-space: nowrap;
+      -webkit-transition: background-color 300ms linear;
+      -moz-transition: background-color 300ms linear;
+      -o-transition: background-color 300ms linear;
+      -ms-transition: background-color 300ms linear;
+      transition: background-color 300ms linear;
+
+      &.warning {
+        background-color:#fec8bc !important;
+      }
+    }
+  }
+
+  &__control-item {
+    display: inline-block;
+    width:98%;
+    height:25px;
+    line-height:25px;
+    vertical-align:middle;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  &__control-option {
+    height:40px;
+    line-height:30px;
+    vertical-align:middle;
+    position:relative;
+    padding-top:3px !important;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #c7d4e0;
+    @include box-sizing(border-box);
+
+    &.active {
+      background-color:#e9f9e8;
+    }
+  }
+}
+
+.ore-tourist-bonus-cards {
+
+  &__list,
+  &__item,
+  &__actions {
+    @include clearfix;
+  }
+
+  &__actions {
+    padding-top: 5px;
+  }
+
+  &__empty {
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #bababa;
+  }
+
+  &__delete-card {
+    display: block;
+    height: 28px;
+    width: 28px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    cursor: pointer;
+    background-image: url(/app/img/common/minus-small-red.png);
+  }
+
+  &__action {
+    display: inline-block;
+    padding-left: 25px;
+    height: 28px;
+    line-height: 28px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left center;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 18px;
+    font-family: 'Kelson Sans';
+    color: #3798d6;
+    text-decoration: none;
+    cursor: pointer;
+
+    &--add {
+      background-image: url(/app/img/common/plus-small.png);
+    }
+  }
+  
+}

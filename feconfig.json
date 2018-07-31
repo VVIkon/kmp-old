@@ -1,0 +1,11 @@
+// образец файла конфигурации фронтэнда
+{
+  // общие настройки
+  "dateFormat": "DD-MM-YYYY",
+  "datetimeFormat": "DD-MM-YYYY HH:mm",
+
+  // кофигурация чата
+  "Messenger": {
+    "websocketUrl": "ws://kmp-travel:8100"
+  }
+}

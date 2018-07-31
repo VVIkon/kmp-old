@@ -1,0 +1,4 @@
+#(файл должен быть с правами на запуск! например -rwxr-xr-x)
+#!/bin/bash
+cd /var/www/kmp/dev.kmp.travel/scripts/ 
+php kmptravel.cbr.php -- echo "date=`date +\%Y-\%m-\%d`"

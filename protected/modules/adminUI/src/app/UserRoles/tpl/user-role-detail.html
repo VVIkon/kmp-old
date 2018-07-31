@@ -1,0 +1,19 @@
+<h1 class="dashboard__header">Разрешения для роли</h1>
+<div class="user-role-detail">
+  <h2 class="page-heading">Роль: {{userRole?.name}}</h2>
+  <div *ngIf="!permissions" class="u-1/2"><div  class="spinner"></div></div>
+  <div *ngIf="permissions" class="o-grid">
+    <div *ngFor="let permission of permissions | columnsort:3" class="o-grid__col u-mb u-1/2@md u-1/3@lg">
+      <!-- TODO: change to label when editing will be implemented -->
+      <span class="prop-switch">
+        <i class="solid-checkbox">
+          <input type="checkbox" [checked]="permission.set" hidden name="permission.bit">
+          <i class="control"></i>
+        </i>
+        <span class="prop-switch__label">
+          <b>[{{permission.bit}}]</b> {{permission.name}}
+        </span>
+      </span>
+    </div>
+  </div>
+</div>

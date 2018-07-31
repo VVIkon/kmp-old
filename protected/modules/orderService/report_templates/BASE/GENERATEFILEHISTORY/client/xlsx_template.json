@@ -1,0 +1,151 @@
+{
+  "mainHeaderTextStyle": {
+    "font": {
+      "size": 14,
+      "color": "0EE1234",
+      "backColor": "FFFFFF",
+      "style": "bold"
+    },
+    "cell": {
+      "valign": "up",
+      "halign": "left",
+      "dataFormat": "text",
+      "indent": 2
+    },
+    "imageUrl": ""
+  },
+  "headerTextStyles": [
+    {
+      "font": {
+        "size": 12,
+        "color": "800000",
+        "backColor": "",
+        "style": "bold"
+      },
+      "cell": {
+        "valign": "up",
+        "halign": "left",
+        "dataFormat": "text",
+        "indent": 2
+      },
+      "imageUrl": ""
+    },
+    {
+      "font": {
+        "size": 12,
+        "color": "800000",
+        "backColor": "",
+        "style": "plain"
+      },
+      "cell": {
+        "valign": "up",
+        "halign": "left",
+        "dataFormat": "text",
+        "indent": 2
+      },
+      "imageUrl": ""
+    }
+  ],
+  "footerTextStyles": [],
+  "columns": [
+    {
+      "headerRows": [
+        {
+          "font": {
+            "size": 12,
+            "color": "800000",
+            "backColor": "",
+            "style": "bold"
+          },
+          "cell": {
+            "valign": "up",
+            "halign": "left",
+            "dataFormat": "text",
+            "indent": 2
+          }
+        },
+        {
+          "font": {
+            "size": 10,
+            "color": "008000",
+            "backColor": "",
+            "style": "bold"
+          },
+          "cell": {
+            "valign": "up",
+            "halign": "left",
+            "dataFormat": "text",
+            "indent": 2
+          }
+        }
+      ],
+      "grouppedHeaderRow": {},
+      "grouppedRow": {
+        "font": {
+          "size": 10,
+          "color": "000000",
+          "backColor": "",
+          "style": "plain"
+        },
+        "cell": {
+          "valign": "up",
+          "halign": "left",
+          "dataFormat": "text",
+          "indent": 2
+        }
+      },
+      "grouppedFooterRow": {},
+      "footerRows": []
+    },
+    {
+      "headerRows": [
+        {
+          "font": {
+            "size": 12,
+            "color": "800080",
+            "backColor": "",
+            "style": "bold"
+          },
+          "cell": {
+            "valign": "up",
+            "halign": "left",
+            "dataFormat": "text",
+            "indent": 2
+          }
+        },
+        {
+          "font": {
+            "size": 12,
+            "color": "808000",
+            "backColor": "",
+            "style": "bold"
+          },
+          "cell": {
+            "valign": "up",
+            "halign": "left",
+            "dataFormat": "text",
+            "indent": 2
+          }
+        }
+      ],
+      "grouppedHeaderRow": {},
+      "grouppedRow": {
+        "font": {
+          "size": 10,
+          "color": "800000",
+          "backColor": "",
+          "style": "plain"
+        },
+        "cell": {
+          "valign": "up",
+          "halign": "center",
+          "dataFormat": "text",
+          "indent": 2
+        }
+      },
+      "grouppedFooterRow": {},
+      "footerRows": []
+    }
+  ],
+  "additionalFields": {}
+}

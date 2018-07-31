@@ -1,0 +1,29 @@
+.partition-header {
+  position: relative;
+  padding: 6px 0;
+  margin: 0;
+  margin-bottom: 15px;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #1774ac;
+  background-color: #3798d6;
+  color: #fff;
+  text-align: center;
+  font-family: 'Kelson Sans';
+  font-weight: normal;
+  font-size: 20px;
+  box-shadow: inset 0 3px 4px rgba(0,0,0,0.2);
+
+  &--switch {
+    box-shadow: inset 0 -1px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    &.is-active {
+      box-shadow: inset 0 3px 4px rgba(0,0,0,0.2);
+    }
+    
+    &:hover {
+      background-color: #449dd6;
+    }
+  }
+}

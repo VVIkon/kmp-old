@@ -1,0 +1,12 @@
+.reports-form {
+  margin-bottom: 100px; // чтобы не пригал интерфейс при открытии выпадающих списков
+
+  &__arrow {
+    padding: 0;
+    text-align: center;
+    
+    .kmpicon {
+      font-size: 16px;
+    }
+  }
+}

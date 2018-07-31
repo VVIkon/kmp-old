@@ -1,0 +1,164 @@
+.ore-service-manualedit-tab {
+  padding:15px;
+
+  &__form {
+    border-collapse: collapse;
+    border:0;
+  }
+
+  &__label,
+  &__field,
+  &__cell {
+    border: 0;
+    padding: 5px 15px;
+    line-height:28px;
+  }
+
+  &__label {
+    font-family: 'Kelson Sans';
+    font-size: 18px;
+    color: #8d959d;
+  }
+
+  &__field {
+    min-width:250px;
+  }
+
+  &__spacer {
+    padding:15px;
+
+    &:after {
+      content:'';
+      display:block;
+      clear: both;
+      height: 1px;
+      border-width: 0 0 1px 0;
+      border-style: solid;
+      border-color: #c4cdd6;
+    }
+  }
+
+  &__actions {
+    padding:10px 15px;
+  }
+
+  &__change-status {
+    .item,
+    .option {
+      line-height:18px;
+      vertical-align:middle;
+    }
+
+    .service-status-small {
+      margin-right:5px;
+      height:18px;
+      line-height:18px;
+      vertical-align:top;
+    }
+  }
+
+  &__status-comment {
+    width:100%;
+    height:100px;
+    @include box-sizing('border-box');
+  }
+}
+
+.ore-service-manualedit-hotel {
+
+  &__reservation-number {
+    font-family: 'Kelson Sans';
+    font-size: 18px;
+    color: #2c2e30;
+  }
+
+  &__supplier {
+    width: 300px;
+
+    .selectize-inpur {
+      white-space: nowrap;
+    }
+  }
+}
+
+.ore-service-manualedit-avia {
+
+  &__add-ticket-button {
+    display: inline-block;
+    padding-left: 25px;
+    height: 28px;
+    line-height: 28px;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: left center;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 18px;
+    font-family: 'Kelson Sans';
+    color: #3798d6;
+    background-image: url(/app/img/common/plus-small.png);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.ore-service-manualedit-avia-tickets {
+  display:inline-block;
+  margin-top:10px;
+  margin-left:15px;
+
+  th {
+    padding: 5px 20px;
+  }
+
+  td {
+    padding: 5px 20px;
+    font-size:16px;
+  }
+
+  &__item:not(.disabled) {
+    cursor:pointer;
+    
+    &:hover {
+      td {
+        background-color: #d0f7dc !important;
+      }
+    }
+  }
+
+  &__tourist-document-number {
+    font-size:15px;
+    border-width:0 0 1px 0;
+    border-style:dashed;
+    cursor:pointer;
+  }
+}
+
+.ore-service-manualedit-avia-change-ticket,
+.ore-service-manualedit-avia-add-ticket {
+  margin:20px 0 10px 0;
+  padding:10px 0;
+  margin-left:15px;
+  display: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c4cdd6;
+  border-radius: 7px;
+
+  &.active {
+    display: inline-block;
+  }
+
+  &__label {
+    padding:5px 15px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #6192b0;
+  }
+
+  select,
+  input,
+  .selectize-control {
+    width: 300px;
+  }
+}

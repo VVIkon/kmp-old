@@ -1,0 +1,27 @@
+.ore-tourist-list {
+  &__empty {
+    padding: 0px 15px 25px 15px;
+    font-size: 18px;
+    color: #979797;
+  }
+}
+
+.ore-tourist-list-controls {
+  &__actions {
+    padding: 0;
+    margin: 10px 0 5px 0;
+
+    .iconed-link {
+      display:inline-block;
+      margin-right: 25px;
+    }
+  }
+
+  &__anno {
+    padding:0 15px 0 0;
+
+    textarea {
+      height:100px;
+    }
+  }
+}

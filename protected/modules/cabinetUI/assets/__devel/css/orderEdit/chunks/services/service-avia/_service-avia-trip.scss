@@ -1,0 +1,21 @@
+.service-avia-trip {
+  position: relative;
+  padding-right: 80px;
+  margin-bottom: 15px;
+  @include box-sizing(border-box);
+  font-family:'PTSansCaption',Tahoma,Geneva,sans-serif;
+
+  &:before,
+  &:after {
+    content:'';
+    display:table;
+    clear:both;
+  }
+
+  &__wrapper {
+    padding:0 0 30px 0;
+    border:1px solid #d1d9e2;
+    @include box-sizing(border-box);
+    position:relative;
+  }
+}

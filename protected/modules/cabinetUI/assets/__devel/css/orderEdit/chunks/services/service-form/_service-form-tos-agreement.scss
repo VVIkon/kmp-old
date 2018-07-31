@@ -1,0 +1,27 @@
+.service-form-tos-agreement {
+  margin-bottom:15px;
+  line-height:18px;
+  vertical-align:baseline;
+
+  &__text {
+    font-size:14px;
+    font-weight:bold;
+    color: #1773ac;
+  }
+
+  &__tos-link {
+    text-decoration:underline;
+    color: #3798d6;
+    cursor:pointer;
+  }
+
+  &.disabled &__text {
+    color: #305d79;
+  }
+
+  &.disabled &__tos-link {
+    text-decoration:underline;
+    color: #5688a8;
+    cursor:pointer;
+  }
+}

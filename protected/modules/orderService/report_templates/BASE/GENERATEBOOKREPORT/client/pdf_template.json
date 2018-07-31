@@ -1,0 +1,28 @@
+{
+  "mainHeaderTextStyle": {
+    "font": {
+      "size": 14,
+      "color": "",
+      "backColor": "DBDBDB",
+      "style": "bold"
+    },
+    "cell": {
+      "valign": "up",
+      "halign": "left",
+      "dataFormat": "text",
+      "indent": 2
+    },
+    "imageUrl": ""
+  },
+  "HeaderTextStyle": [],
+  "FooterTextStyle": [],
+  "columns": [
+    {
+      "headerRow": [],
+      "grouppedHeaderRow": {},
+      "grouppedRow": {},
+      "grouppedFooterRow": {},
+      "footerRow": []
+    }
+  ]
+}

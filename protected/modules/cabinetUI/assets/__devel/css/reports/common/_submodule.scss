@@ -1,0 +1,44 @@
+.submodule-headers {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #cacbcc;
+  @include clearfix;
+  @include box-sizing(border-box);
+
+  &__item {
+    position: relative;
+    padding: 22px 0 18px 0;
+    margin: 0;
+    height: 70px;
+    background-color: #fff;
+    @include box-sizing(border-box);
+    // cursor: pointer;
+  }
+
+  &__item-label {
+    display: block;
+    height: 30px;
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: #cacbcc;
+    @include box-sizing(border-box);
+    line-height: 30px;
+    text-align: center;
+    font-family: 'Kelson Sans';
+    font-weight: bold;
+    font-size: 28px;
+    color: #5fadde;
+  }
+
+  &__item:last-child &__item-label {
+    border: none;
+  }
+}
+
+.submodule {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

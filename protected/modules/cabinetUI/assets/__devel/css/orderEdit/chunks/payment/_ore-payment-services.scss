@@ -1,0 +1,243 @@
+.ore-payment-services {
+  padding:0;
+  margin-bottom:20px;
+
+  &__order-actions {
+    margin-bottom:10px;
+  }
+
+  &__commission {
+    float:right;
+    width:310px;
+    margin-right:20px;
+    border-radius: 0 0 5px 5px;
+    background: #f5f5fe;
+
+    &:after {
+      content:" ";
+      display:block;
+      clear:both;
+    }
+
+    table {
+      width:100%;
+      border:0;
+      border-collapse:collapse;
+
+      tr:first-child {
+        td {
+          border-width:0 0 2px 0;
+          border-color:#fff;
+          border-style:solid;
+        }
+      }
+
+      td {
+        color: #595959;
+        text-align: right;
+        padding:7px 0;
+        padding-right:13px;
+        font-size:18px;
+        font-family:'PTSansCaption',Tahoma, Geneva, sans-serif;
+      }
+
+      td:first-child {
+        padding-left:18px;
+        text-align: left;
+        color: #3798d6;
+      }
+    }
+  }
+}
+
+.ore-payment-services-list {
+  &__check-header,
+  &__check {
+    padding-left:5px !important;
+    padding-right:5px !important;
+    width:28px;
+  }
+
+  &__check {
+    label.juicy-checkbox {
+      margin-left:5px;
+    }
+  }
+
+  &__status-header,
+  &__status {
+    padding-left:8px !important;
+    width: 74px;
+    text-align:center !important;
+  }
+
+  &__status {
+    .service-status-small {
+      vertical-align:middle;
+    }
+  }
+
+  &__net-header,
+  &__net,
+  &__gross-header,
+  &__gross {
+    width: 160px;
+    @include box-sizing(border-box);
+  }
+
+  &__net-header,
+  &__gross-header {
+    text-align:center !important;
+  }
+
+  &__net,
+  &__gross {
+    padding-right:40px !important;
+    text-align:right;
+  }
+
+  &__actions {
+    td {
+      border-bottom: 2px solid #dae4eb;
+      border-top: 2px solid #dae4eb;
+      background: #f1f9ff !important;
+      font-size: 15px;
+      color: #1f1f1f;
+      padding-top:5px;
+      padding-bottom:5px;
+
+      .jrfz-wrapper {
+        display:inline-block;
+        vertical-align:middle;
+        width:90px;
+      }
+
+      input {
+        width: 90px;
+        color: #515151;
+        font-family:'PTSansCaption',Tahoma, Geneva, sans-serif;
+        font-size:14px;
+        text-align: right;
+      }
+    }
+  }
+
+  &__service {
+    font-size:15px;
+    border:0 !important;
+    text-overflow:ellipsis;
+    vertical-align:middle;
+
+    .kmpicon {
+      font-size:20px;
+
+      &.offline {
+        color:#979797;
+      }
+    }
+  }
+
+  &__info {
+    width:130px;
+    padding:0 5px;
+    text-align:center;
+    vertical-align:middle;
+  }
+
+  &__tp-violations {
+    font-size: 18px;
+    color: #c46606;
+  }
+
+  &__tos {
+    vertical-align:top;
+    color: #8a8b8c;
+    text-decoration: underline;
+    cursor:pointer;
+  }
+
+  &__offline {
+    display: inline-block;
+    padding: 1px 5px;
+    border-radius: 3px;
+    border: 1px solid #ffd891;
+    vertical-align:top;
+    color: #777777;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    font-family: 'PTSansCaption',Tahoma, Geneva, sans-serif;
+  }
+
+  &__total {
+    text-align:center !important;
+    font-size:20px !important;
+    color: #3798d6 !important;
+  }
+
+  &__service-actions {
+    padding: 5px !important;
+
+    .btn {
+      margin: 2px;
+
+      &:disabled {
+        background-color: #d5d5d5;
+        color: #a8a6a6;
+
+        .kmpicon {
+          color: #a8a6a6;
+        }
+      }
+    }
+    /*
+
+    button {
+      padding:3px 7px;
+      line-height:16px;
+      font-size:14px;
+      vertical-align:middle;
+      border-color: #d1d1d1;
+      box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.1) inset;
+
+      .kmpicon {
+        color:#951705;
+        font-size:16px;
+      }
+
+      &:hover {
+        .kmpicon {
+          color:#871606;
+        }
+      }
+
+      &:active {
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1) inset;
+      }
+
+      &:disabled {
+        box-shadow:none;
+      }
+    } */
+  }
+
+  &__service-no-actions {
+    padding-left: 5px;
+    white-space: nowrap;
+    font-size: 15px;
+    color: #979797;
+  }
+
+  &__discount-label {
+    text-align: right;
+    border-right: 0 !important;
+  }
+
+  &__discount {
+    width: 160px;
+    padding-right:40px !important;
+    @include box-sizing(border-box);
+    text-align:right;
+  }
+
+}

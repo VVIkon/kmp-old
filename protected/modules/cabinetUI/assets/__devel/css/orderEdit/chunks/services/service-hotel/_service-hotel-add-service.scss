@@ -1,0 +1,183 @@
+.service-hotel-add-service {
+  position: relative;
+  padding-right: 390px;
+  margin-bottom: 2px;
+  height: 42px;
+  border: 1px solid #c4cdd6;
+  background-color: #fff;
+  @include box-sizing(border-box);
+
+  &__info {
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    @include box-sizing(border-box);
+
+    .kmpicon {
+      font-size: 24px;
+    }
+  }
+
+  &--issued &__info {
+    .kmpicon {
+      color: #187b1f;
+    }
+  }
+
+  &--available &__info {
+    .kmpicon {
+      color: #0c5683;
+    }
+  }
+
+  &__type,
+  &__name {
+    vertical-align: baseline;
+  }
+
+  &--issued &__type {
+    color: #187b1f;
+  }
+
+  &--available &__type {
+    color: #0c5683;
+  }
+
+  &__prices {
+    padding: 0 15px;
+    position: absolute;
+    top: 0;
+    right: 190px;
+    width: 200px;
+    height: 40px;
+    text-align: right;
+    line-height: 40px;
+    vertical-align: baseline;
+    white-space: nowrap;
+    @include box-sizing(border-box);
+  }
+
+  &__local-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3798d6;
+  }
+
+  &__view-price {
+    font-size: 16px;
+    color: #8e8e8e
+  }
+
+  &__actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 190px;
+    text-align: right;
+    @include box-sizing(border-box);
+  }
+
+  &__action,
+  &__notice {
+    display: block;
+    float: right;
+    padding: 10px;
+    height: 100%;
+    border: none;
+    outline: none;
+    @include box-sizing(border-box);
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__action {
+    cursor: pointer;
+
+    &--add {
+      width: 120px;
+      color: #fff;
+      background-color: #82bede;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #fff;
+        background-color: #4eb2e4;
+      }
+    }
+
+    &--book {
+      width: 140px;
+      color: #0d532c;
+      background-color: #daedd0;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: #b9e9b5;
+      }
+    }
+
+    &--remove {
+      padding: 10px 0;
+      width: 30px;
+      color: #a52121;
+      background-color: #ffcdc3;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: #a52121;
+        background-color: #f3a2a2;
+      }
+
+      .kmpicon {
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__notice {
+    background-color: #f9f9fd;
+    color: #054063;
+
+    &--add {
+      width: 120px;
+    }
+
+    &--book-with-service {
+      width: 140px;
+      padding: 5px 0;
+      line-height: 15px;
+      font-size: 13px;
+    }
+
+    &--waiting-book,
+    &--booked,
+    &--cancelled {
+      width: 140px;
+      padding: 5px 0;
+      line-height: 15px;
+      font-size: 13px;
+    }
+
+    &--waiting-book {
+      color: #7a2e00;
+      background-color: #f8f7ed;
+    }
+
+    &--booked {
+      color: #0d532c;
+      background-color: #ecfbec;
+    }
+
+    &--cancelled {
+      color: #d43f3a;
+      background-color: #ffe0df;
+    }
+  }
+}

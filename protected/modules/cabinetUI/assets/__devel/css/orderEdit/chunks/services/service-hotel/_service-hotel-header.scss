@@ -1,0 +1,137 @@
+.service-hotel-header {
+  &-dates {
+   width:100px;
+   white-space:nowrap;
+   text-align: right;
+
+   &__date-from,
+   &__date-to {
+     font-size:16px;
+     line-height:20px;
+     font-weight:bold;
+     vertical-align:bottom;
+   }
+
+   &__date-from {
+     color: $color-date-from;
+   }
+
+   &__date-to {
+     color: $color-date-to;
+   }
+  }
+
+  &-days {
+    width:70px;
+    padding-right:10px !important;
+    white-space:normal;
+    text-align: center;
+    vertical-align:middle;
+    color:#3081b3;
+    font-weight:bold;
+
+    &__count {
+      display:inline-block;
+      width:100%;
+      font-size:20px;
+      line-height:22px;
+    }
+
+    &__label {
+      display:inline-block;
+      width:100%;
+      font-size:14px;
+      line-height:14px;
+    }
+  }
+
+  &-hotelinfo {
+   &__title {
+     font-size: 15px;
+     font-weight: bold;
+     line-height: 20px;
+     white-space: nowrap;
+     cursor: pointer;
+   }
+
+   &__title:hover &__name {
+      text-decoration: underline;
+   }
+
+   &__address {
+     white-space:normal;
+     margin-top:3px;
+     font-size:14px;
+     line-height:15px;
+     color:#575757;
+   }
+
+   &__stars {
+     vertical-align:top;
+     font-size:12px;
+     text-decoration: none;
+
+     &:hover {
+       text-decoration: none;
+     }
+
+     .kmpicon {
+       vertical-align:top;
+       font-size:12px;
+       color:#3798d6;
+     }
+   }
+  }
+
+  &-residents {
+   width:150px;
+   font-size:18px;
+   font-weight:bold;
+   color: #3798d6;
+   text-align: center;
+   white-space: nowrap;
+
+   .kmpicon {
+     font-size:30px;
+     vertical-align:middle;
+   }
+  }
+
+  &-extra {
+    width:200px;
+    text-align: center;
+    font-weight:bold;
+
+    &__label {
+      display:inline-block;
+      width:100%;
+      font-size: 12px;
+      line-height: 14px;
+      vertical-align:middle;
+    }
+
+    &__reservation {
+      display:inline-block;
+      width:100%;
+      font-size:16px;
+      line-height:24px;
+      vertical-align:middle;
+      cursor:text;
+    }
+
+    &__voucher-download {
+      margin:0;
+      text-decoration:none !important;
+      cursor:pointer;
+
+      .kmpicon {
+        font-size:22px;
+        color:#0f5313;
+      }
+
+      &:hover .kmpicon {
+        color:#1b8e0b;
+      }
+    }
+  }
+}

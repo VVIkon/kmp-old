@@ -1,0 +1,129 @@
+.ore-set-invoice {
+  .service-list {
+    @include box-shadow(-2px 2px 8px 0px rgba(0,0,0,0.2));
+    border-radius: 10px 0 0 10px;
+
+    table {
+      .delim {
+        height: 100%;
+        width: 1px;
+        border-width: 0 1px 0 0;
+        border-style: solid;
+        border-color: #c4cdd6;
+        margin: 0 10px;
+      }
+
+      td {
+        white-space: nowrap;
+      }
+
+      .sl-check {
+        width: 20px;
+        padding-right: 15px;
+        border: 0;
+      }
+
+      .sl-service {
+        width: 470px;
+        max-width: 470px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 0px;
+
+        label {
+          display: block;
+          line-height: 28px;
+        }
+      }
+
+      .sl-status {
+        width:182px;
+
+        i {
+          vertical-align:middle;
+        }
+      }
+
+      .sl-price {
+        width:142px;
+      }
+
+      .sl-topay {
+        width:182px;
+      }
+
+      th.sl-totaltext {
+        padding-left:0;
+      }
+
+      th.sl-total {
+        font-size:24px;
+        font-weight:bold;
+        color: #3798d6;
+        padding-right: 25px;
+        padding-left:5px;
+        white-space:nowrap;
+        text-align:right;
+      }
+
+      td.sl-service {
+        font-size: 15px;
+      }
+
+      td.sl-price {
+        font-size: 18px;
+        text-align:right;
+        padding-right: 25px;
+      }
+
+      tr.disabled {
+        td.sl-service,
+        td.sl-price {
+          color:#a4a4a4;
+        }
+      }
+
+      td.sl-topay {
+        color: #3798d6;
+        text-align:right;
+        padding-right: 25px;
+        font-size:18px;
+
+        input {
+          width: 114px;
+          font-size:18px;
+          text-align: right;
+          padding-right: 5px
+        }
+      }
+    }
+  }
+
+  .payform-select {
+    margin: 20px 0;
+    padding-left: 42px;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: top;
+
+    label {
+      display: block;
+      float: left;
+      margin-right: 20px;
+      font-family: 'PTSansCaption',Tahoma, Geneva, sans-serif;
+      font-size: 18px;
+      line-height: 28px;
+      color: #6192b0;
+    }
+
+    .select-control {
+      display:inline-block;
+      width:300px;
+    }
+  }
+
+  .set-inv-buttons {
+    text-align: center;
+    margin: 15px 0 0 0;
+  }
+}

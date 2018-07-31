@@ -1,0 +1,19 @@
+.service-form-custom-fields {
+  padding-right: 80px;
+
+  &__noty {
+    padding: 3px 15px;
+    color: #1773b1;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  &__required-mark {
+    display: inline-block;
+    width: 10px;
+    font-size: 9px;
+    vertical-align: top;
+    text-align: center;
+    color: #305d79;
+  }
+}

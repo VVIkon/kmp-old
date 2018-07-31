@@ -1,0 +1,71 @@
+.modal-accept-book-terms {
+  font-size:14px;
+  color:#575757;
+
+  &__header {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 19px;
+    font-weight: normal;
+    color: #1773ac;
+  }
+
+  &__non-refundable-warning {
+    position: relative;
+    min-height: 30px;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #96642e;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 15px;
+    color: #96642e;
+    background-color: #fff0c6;
+    @include box-sizing(border-box);
+
+    .kmpicon {
+      color: #96642e;
+    }
+  }
+
+  &__service-list {
+    width:100%;
+    border-collapse: collapse;
+    border: 1px solid #c4cdd6;
+
+    td {
+      padding:5px 5px 5px 15px;
+      color: #575757;
+    }
+  }
+
+  &__service-name {
+    font-size:15px;
+    font-weight: bold;
+    color: #6192b0;
+
+    .kmpicon {
+      font-size: 22px;
+    }
+  }
+
+  &__tos-link {
+    font-size:15px;
+    font-weight: bold;
+    color: #575757;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__question {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1773ac;
+  }
+}

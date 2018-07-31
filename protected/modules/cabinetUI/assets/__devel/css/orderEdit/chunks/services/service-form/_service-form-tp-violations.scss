@@ -1,0 +1,21 @@
+.service-form-tp-violations {
+  &__header {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1773b1;
+    margin-bottom: 5px;
+    line-height: 20px;
+
+    .kmpicon {
+      font-size: 18px;
+      color: #c46606;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    list-style-type: square;
+    font-weight: bold;
+    color: #305d79;
+  }
+}

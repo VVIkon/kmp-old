@@ -1,0 +1,29 @@
+.service-avia-tripinfo-baggage {
+    text-align: left;
+
+    .kmpicon {
+      font-size: 18px;
+      color: #3e6e53;
+      text-decoration: none;
+    }
+
+    &__label {
+      color: #3e6e53;
+    }
+
+    &__item {
+      color: #3e3e3e;
+
+      &:after {
+        content: ',';
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+
+    &__no-info {
+      color: #b9b9b9;
+    }
+}

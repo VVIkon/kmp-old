@@ -1,0 +1,20 @@
+<div class="wgt-select__input" (mousedown)="toggleDropdown()">
+  <input type="text" value="{{selectedOption?.name}}"
+    (keyup)="onKey($event)"
+    (focusout)="onBlur()"
+  >
+  <span class="wgt-select__dropdown-arrow"
+    [class.is-loading]="currentState === WidgetState.Loading"
+  ></span>
+</div>
+<div class="wgt-select__dropdown"
+   *ngIf="options"
+   [class.is-active]="isFocused"
+>
+  <div class="wgt-select__option" 
+    *ngFor="let option of options"
+    (mousedown)="onOptionSelect(option)"
+  >
+    {{option.name}}
+  </div>
+</div>
